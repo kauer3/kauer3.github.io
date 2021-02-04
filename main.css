@@ -1,0 +1,49 @@
+body {
+	margin: 0;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	height: 100vh;
+}
+
+section {
+	height: 100vh;
+}
+
+.dark {
+	text-align: left;
+	background: rgb(27,27,27);
+	color: white;
+	position: relative;
+}
+
+.hello {
+	height: 30vh;
+	width: 110vh;
+	margin-left: 15vh;
+	text-align: left;
+	font-size: 12vh;
+	position: absolute;
+}
+
+.hello1 {
+	margin-top: 35vh;
+}
+
+.hide {
+	margin-top: -5vh;
+	opacity: 0;
+}
+
+img {
+	height: 40vh;
+	position: absolute;
+	object-fit: cover;
+	right: 30vh;
+	top: 30vh;
+	z-index: -1;
+}
+
+.content {
+	padding: 9em 5em;
+	z-index: 1;
+	position: relative;
+}
