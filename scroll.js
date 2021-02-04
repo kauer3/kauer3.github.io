@@ -27,86 +27,86 @@
 
 let tl = gsap.timeline()
 
-tl.from("img", {duration: 30, opacity: 0, x: 200, y: -200, scale: 0.6, ease: "elastic", delay: 1})
+tl.from("img", {duration: 3, opacity: 0, x: 200, y: -200, scale: 0.6, ease: "elastic", delay: 1})
 
-tl.from(".hello1", {
+tl.from("#hello h1", {
     duration: 1,
     opacity: 0,
     scale: 0.7,
     y: -300,
     ease: "back",
     //delay: 2,
-    //stagger: 2
-}, "-=26")
+    stagger: 2
+})
 
-tl.to(".hello1", {
-    duration: 0.5,
-    opacity: 0,
-    scale: 0.7,
-    y: 400,
-    //ease: "expo",
-    //delay: 2,
-    //markers: true,
-    //stagger: 2
-    //onComplete: swap()
-}, "-=23")
+//tl.to(".hello1", {
+    //duration: 0.5,
+    //opacity: 0,
+    //scale: 0.7,
+    //y: 400,
+    ////ease: "expo",
+    ////delay: 2,
+    ////markers: true,
+    ////stagger: 2
+    ////onComplete: swap()
+//}, "-=23")
 
-tl.to(".hello2", {
-    duration: 3,
-    opacity: 1,
-    scale: 1,
-    y: 250,
-    ease: "elastic",
-    //delay: 2,
-    //markers: true,
-    //stagger: 2
-    //onComplete: swap()
-}, "-=23")
+//tl.to(".hello2", {
+    //duration: 3,
+    //opacity: 1,
+    //scale: 1,
+    //y: 250,
+    //ease: "elastic",
+    ////delay: 2,
+    ////markers: true,
+    ////stagger: 2
+    ////onComplete: swap()
+//}, "-=23")
 
-tl.to(".hello2", {
-    duration: 0.5,
-    opacity: 0,
-    scale: 0.7,
-    y: 400,
-    //ease: "expo",
-    //delay: 2,
-    //markers: true,
-    //stagger: 2
-    //onComplete: swap()
-}, "-=20")
+//tl.to(".hello2", {
+    //duration: 0.5,
+    //opacity: 0,
+    //scale: 0.7,
+    //y: 400,
+    ////ease: "expo",
+    ////delay: 2,
+    ////markers: true,
+    ////stagger: 2
+    ////onComplete: swap()
+//}, "-=20")
 
-tl.to(".hello3", {
-    duration: 3,
-    opacity: 1,
-    scale: 1,
-    y: 250,
-    ease: "elastic",
-    //delay: 2,
-    //markers: true,
-    //stagger: 2
-    //onComplete: swap()
-}, "-=20")
+//tl.to(".hello3", {
+    //duration: 3,
+    //opacity: 1,
+    //scale: 1,
+    //y: 250,
+    //ease: "elastic",
+    ////delay: 2,
+    ////markers: true,
+    ////stagger: 2
+    ////onComplete: swap()
+//}, "-=20")
 
-tl.to(".hello3", {
-    duration: 0.5,
-    opacity: 0,
-    scale: 0.7,
-    y: 400,
-    //ease: "expo",
-    //delay: 2,
-    //markers: true,
-    //stagger: 2
-    //onComplete: swap()
-}, "-=20")
+//tl.to(".hello3", {
+    //duration: 0.5,
+    //opacity: 0,
+    //scale: 0.7,
+    //y: 400,
+    ////ease: "expo",
+    ////delay: 2,
+    ////markers: true,
+    ////stagger: 2
+    ////onComplete: swap()
+//}, "-=20")
 
-tl.to(".hello4", {
-    duration: 3,
-    opacity: 1,
-    scale: 1,
-    y: 250,
-    ease: "elastic",
-    //delay: 2,
-    //markers: true,
-    //stagger: 2
-    //onComplete: swap()
-}, "-=18")
+//tl.to(".hello4", {
+    //duration: 3,
+    //opacity: 1,
+    //scale: 1,
+    //y: 250,
+    //ease: "elastic",
+    ////delay: 2,
+    ////markers: true,
+    ////stagger: 2
+    ////onComplete: swap()
+//}, "-=18")
