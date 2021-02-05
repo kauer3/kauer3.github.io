@@ -20,4 +20,4 @@ text: And do you know what's best?
 Well... the best is always yet to come...
 ...and you can be part of it!
 
-contact
+contact form
