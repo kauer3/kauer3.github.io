@@ -15,30 +15,60 @@ section {
 	position: relative;
 }
 
-.hello {
+h1 {
 	height: 30vh;
-	width: 110vh;
+	width: 105vh;
 	margin-left: 15vh;
 	text-align: left;
-	font-size: 12vh;
+	font-size: 10vh;
 	position: absolute;
 }
 
 .hello1 {
-	margin-top: 35vh;
+	margin-top: 37vh;
 }
 
 .hide {
-	margin-top: -5vh;
 	opacity: 0;
 }
 
-img {
+.hello2 {
+	margin-top: -5vh;
+}
+
+.hello3 {
+	margin-top: -6.0vh;
+}
+
+.hello4 {
+	margin-top: 0.10vh;
+}
+
+#dev {
 	height: 40vh;
 	position: absolute;
-	object-fit: cover;
+	/* object-fit: cover; */
 	right: 30vh;
 	top: 30vh;
+	z-index: -2;
+}
+
+#scroll {
+	width: 44vh;
+	text-align: center;
+	position: absolute;
+	object-fit: cover;
+	margin-left: 15vh;
+	top: -10vh;
+	z-index: -1;
+}
+
+#arrow {
+	width: 45vh;
+	position: absolute;
+	object-fit: cover;
+	top: 10vh;
+	left: 23vh;
 	z-index: -1;
 }
 
