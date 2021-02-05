@@ -68,7 +68,7 @@ h1 {
 
 #blue {
 	height: 100vh;
-	z-index: -1;
+	z-index: 0;
 	text-align: left;
 	background: #a2d5e8;
 	color: black;
