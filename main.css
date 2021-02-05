@@ -4,15 +4,8 @@ body {
 	height: 100vh;
 }
 
-section {
+#hello {
 	height: 100vh;
-}
-
-.dark {
-	text-align: left;
-	background: rgb(27,27,27);
-	color: white;
-	position: relative;
 }
 
 h1 {
@@ -33,7 +26,8 @@ h1 {
 }
 
 .hello2 {
-	margin-top: -5vh;
+	margin-top: 0vh;
+	width: 106vh;
 }
 
 .hello3 {
@@ -41,7 +35,7 @@ h1 {
 }
 
 .hello4 {
-	margin-top: 0.10vh;
+	margin-top: 1vh;
 }
 
 #dev {
@@ -50,7 +44,7 @@ h1 {
 	/* object-fit: cover; */
 	right: 30vh;
 	top: 30vh;
-	z-index: -2;
+	z-index: -3;
 }
 
 #scroll {
@@ -58,9 +52,9 @@ h1 {
 	text-align: center;
 	position: absolute;
 	object-fit: cover;
-	margin-left: 15vh;
+	margin-left: 20vh;
 	top: -10vh;
-	z-index: -1;
+	z-index: -2;
 }
 
 #arrow {
@@ -68,8 +62,17 @@ h1 {
 	position: absolute;
 	object-fit: cover;
 	top: 10vh;
-	left: 23vh;
+	left: 22vh;
+	/* z-index: -1; */
+}
+
+#blue {
+	height: 100vh;
 	z-index: -1;
+	text-align: left;
+	background: #a2d5e8;
+	color: black;
+	position: relative;
 }
 
 .content {

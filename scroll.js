@@ -1,3 +1,5 @@
+// First section animations
+
 let tl = gsap.timeline()
 
 tl.from("#dev", {duration: 30, opacity: 0, x: 200, y: -200, scale: 0.6, ease: "elastic", delay: 1})
@@ -36,21 +38,13 @@ gsap.to("#hello .fade", {
     //onComplete: swap()
 })
 
-// tl.to("#dev", {
-//     duration: 5,
-//     x: -700,
-//     ease: "expo",
-//     onComplete: set,
-//     // delay: 25,
-//     // stagger: 3
-// }, "-=7")
+// Second section animations
+gsap.registerPlugin(ScrollTrigger);
 
-// tl.from("#scroll", {
-//     duration: 3,
-//     opacity: 0,
-//     scale: 0.8,
-//     x: 400,
-//     ease: "bounce"
-//     // delay: 25,
-//     // stagger: 3
-// })
+ScrollTrigger.create({
+    trigger: "#hello",
+    start: "top top",
+    end: "+=490px",
+    pinSpacing: false,
+    pin: true
+})
