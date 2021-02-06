@@ -10,8 +10,6 @@ tl.from(".hello1", {
     scale: 0.7,
     y: -300,
     ease: "back"
-    // delay: 4,
-    // stagger: 3
 }, "-=26")
 
 gsap.to("#hello .hide", {
@@ -21,9 +19,7 @@ gsap.to("#hello .hide", {
     y: 250,
     ease: "elastic",
     delay: 10,
-    //markers: true,
     stagger: 4.4
-    //onComplete: swap()
 })
 
 gsap.to("#hello .fade", {
@@ -33,9 +29,7 @@ gsap.to("#hello .fade", {
     y: 245,
     ease: "expo",
     delay: 10,
-    //markers: true,
     stagger: 4.4
-    //onComplete: swap()
 })
 
 // Second section animations
