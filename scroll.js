@@ -1,5 +1,4 @@
 // First section animations
-
 let tl = gsap.timeline()
 
 tl.from("#dev", {duration: 30, opacity: 0, x: 200, y: -200, scale: 0.6, ease: "elastic", delay: 1})
