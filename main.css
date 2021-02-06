@@ -41,7 +41,6 @@ h1 {
 #dev {
 	height: 40vh;
 	position: absolute;
-	/* object-fit: cover; */
 	right: 30vh;
 	top: 30vh;
 	z-index: -3;
