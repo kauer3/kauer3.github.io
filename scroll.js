@@ -34,10 +34,32 @@ gsap.to("#hello .fade", {
 // Second section animations
 gsap.registerPlugin(ScrollTrigger);
 
+// let sections = gsap.utils.toArray("section");
+
+// gsap.to(sections, {
+//     yPercent: -100 * (sections.length - 1),
 ScrollTrigger.create({
     trigger: "#hello",
     start: "top top",
-    end: "+=490px",
+    end: () => "+=490",
     pinSpacing: false,
+    // scrub: 1,
+    // snap: 1 / (section.leght - 1),
     pin: true
+    // }
+})
+
+let sidePages = gsap.utils.toArray(".panel");
+
+gsap.to(sidePages, {
+    // xPercent: -100 * (sidePages.length - 1),
+    ease: "none",
+    ScrollTrigger: {
+        trigger: ".blue",
+        pin: true,
+        scrub: 1,
+        snap: 1 / (sidePages.length - 1),
+        end: () => "+=" +
+            document.querySelector(".blue").offsetWidth
+    }
 })

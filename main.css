@@ -2,6 +2,7 @@ body {
 	margin: 0;
 	font-family: Georgia, 'Times New Roman', Times, serif;
 	height: 100vh;
+	/* overflow-x: hidden; */
 }
 
 #hello {
@@ -41,7 +42,7 @@ h1 {
 #dev {
 	height: 40vh;
 	position: absolute;
-	right: 30vh;
+	left: 135vh;
 	top: 30vh;
 	z-index: -3;
 }
@@ -66,15 +67,20 @@ h1 {
 
 #blue {
 	height: 100vh;
+	width: 200%;
 	z-index: 0;
 	text-align: left;
 	background: #a2d5e8;
 	color: black;
 	position: relative;
+	white-space: nowrap;
+	/* display: flex; */
+	/* flex-wrap: nowrap; */
 }
 
-.content {
-	padding: 9em 5em;
-	z-index: 1;
-	position: relative;
+.panel {
+	width: 50%;
+	height: 100%;
+	background-color: tan;
+	display: inline-block;
 }
