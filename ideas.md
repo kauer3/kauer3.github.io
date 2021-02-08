@@ -3,6 +3,8 @@ Well, it all began...
 
 idea: present myself
 
+something has to come here, an introduction to this hole story
+
 idea: black circle comes up growing and fills the page
 
 text: When you seem to be lost (, there's always a way out)
