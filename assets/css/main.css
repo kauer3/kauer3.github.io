@@ -25,6 +25,9 @@ footer, header, hgroup, menu, nav, section {
 
 body {
 	line-height: 1;
+	cursor: url(/images/cursor.png), auto;
+	overflow-x: hidden;
+	overflow-y: hidden;
 }
 
 #particles-js {
@@ -34,8 +37,38 @@ body {
 	/* z-index: 0; */
 }
 
+.cursor {
+	width: 20px;
+	height: 20px;
+	border: 1px solid rgba(0, 5, 5, 0.1);
+	border-radius: 50%;
+	position: absolute;
+	transition-duration: 200ms;
+	transition-timing-function: linear;
+}
+
+.expand {
+	animation: cursorAnim 0.3 forwards;
+	border: 1px solid red;
+	opacity: 15%;
+}
+
+@keyframes cursorAnim {
+	0% {
+		transform: scale(0.1);
+	}
+	50% {
+		transform: scale(15);
+	}
+	100% {
+		opacity: 0;
+		transform: scale(0.1);
+	}
+}
+
 ol, ul {
 	list-style: none;
+	background-color: rgba(1, 21, 28, 0.2);
 }
 
 blockquote, q {
@@ -156,6 +189,7 @@ input, select, textarea {
 		border-bottom: dotted 1px rgba(255, 255, 255, 0.5);
 		text-decoration: none;
 		color: inherit;
+		cursor: url(/images/cursorp.png), auto;
 	}
 
 		a:hover {
@@ -604,7 +638,10 @@ input, select, textarea {
 	.icon {
 		text-decoration: none;
 		border-bottom: none;
+		margin-top: 30%;
+		vertical-align: center;
 		position: relative;
+		width: 3em;
 	}
 
 		.icon:before {
@@ -1140,7 +1177,7 @@ input, select, textarea {
 			-webkit-transition-delay: 0.75s;
 			-ms-transition-delay: 0.75s;
 			transition-delay: 0.75s;
-			background-image: linear-gradient(to top, rgba(19, 21, 25, 0.5), rgba(19, 21, 25, 0.5)), url("images/dark.png");
+			background-image: linear-gradient(to top, rgba(19, 21, 25, 0.5), rgba(19, 21, 25, 0.5)), url("images/dark.jpg");
 			background-size: auto, 256px 256px;
 			background-position: center, center;
 			background-repeat: no-repeat, repeat;
@@ -1156,7 +1193,7 @@ input, select, textarea {
 			-webkit-transition: -webkit-transform 0.325s ease-in-out, -webkit-filter 0.325s ease-in-out;
 			-ms-transition: -ms-transform 0.325s ease-in-out, -ms-filter 0.325s ease-in-out;
 			transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out;
-			background-image: url("images/dark.jpg");
+			background-image: url("/images/dark.jpg");
 			background-position: center;
 			background-size: cover;
 			background-repeat: no-repeat;
@@ -1310,6 +1347,7 @@ input, select, textarea {
 		}
 
 			#header .content .inner {
+				background-color: rgba(1, 21, 28, 0.2);
 				-moz-transition: max-height 0.75s ease, padding 0.75s ease, opacity 0.325s ease-in-out;
 				-webkit-transition: max-height 0.75s ease, padding 0.75s ease, opacity 0.325s ease-in-out;
 				-ms-transition: max-height 0.75s ease, padding 0.75s ease, opacity 0.325s ease-in-out;
@@ -1545,7 +1583,7 @@ input, select, textarea {
 			position: relative;
 			width: 40rem;
 			max-width: 100%;
-			background-color: rgba(27, 31, 34, 0.85);
+			background-color: rgba(1, 2, 8, 0.7);
 			border-radius: 4px;
 			opacity: 0;
 		}

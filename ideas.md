@@ -13,7 +13,7 @@ idea: maybe a white or light circle arround the cursor and somewhere something t
 
 text: When you (say something that sounds hopeless)
 
-idea: drag guy in the sea to boat (or help someone in some other way)
+idea: drag guy in the sea to boat (or help someone in some other way) (use 'mmove cursor')
 
 text: I discovered that 'I' could be in control(or make it happen, have to work on it). (onscroll=change 'I' to 'We' and to 'You')
 idea: click to change color
