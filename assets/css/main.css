@@ -38,8 +38,8 @@ body {
 }
 
 .cursor {
-	width: 20px;
-	height: 20px;
+	width: 10px;
+	height: 10px;
 	border: 1px solid rgba(0, 5, 5, 0.1);
 	border-radius: 50%;
 	position: absolute;
@@ -57,8 +57,8 @@ body {
 	0% {
 		transform: scale(0.1);
 	}
-	50% {
-		transform: scale(15);
+	75% {
+		transform: scale(50);
 	}
 	100% {
 		opacity: 0;
@@ -420,6 +420,10 @@ input, select, textarea {
 		text-transform: uppercase;
 	}
 
+	textarea {
+		height: 15vh;
+	}
+
 	input[type="text"],
 	input[type="password"],
 	input[type="email"],
@@ -684,7 +688,7 @@ input, select, textarea {
 
 		.image:before {
 			pointer-events: none;
-			background-image: url("images/dark.jpg");
+			/* background-image: url("images/dark.jpg"); */
 			background-color: rgba(19, 21, 25, 0.5);
 			border-radius: 4px;
 			content: '';
@@ -820,6 +824,8 @@ input, select, textarea {
 		list-style: none;
 		margin-left: -1rem;
 		padding-left: 0;
+		width: 52.6%;
+		float: left;
 	}
 
 		ul.actions li {
@@ -880,7 +886,7 @@ input, select, textarea {
 				width: 100%;
 			}
 
-		@media screen and (max-width: 480px) {
+		@media screen and (max-width: 320px) {
 
 			ul.actions:not(.fixed) {
 				-moz-flex-direction: column;
@@ -934,14 +940,16 @@ input, select, textarea {
 /* Icons */
 
 	ul.icons {
-		cursor: default;
 		list-style: none;
 		padding-left: 0;
+		float: right;
+		width: 33.9%;
 	}
 
 		ul.icons li {
 			display: inline-block;
 			padding: 0 0.75em 0 0;
+			bottom: 33%;
 		}
 
 			ul.icons li:last-child {
@@ -965,6 +973,21 @@ input, select, textarea {
 				ul.icons li a:active {
 					background-color: rgba(255, 255, 255, 0.175);
 				}
+
+					@media screen and (max-width: 600px) {
+
+						ul.actions {
+							width: 100%;
+						}
+
+						ul.icons {
+							list-style: none;
+							padding-left: 0;
+							float: left;
+							width: 100%;
+							margin-top: 3vh;
+						}
+					}
 
 /* Table */
 
@@ -1177,7 +1200,7 @@ input, select, textarea {
 			-webkit-transition-delay: 0.75s;
 			-ms-transition-delay: 0.75s;
 			transition-delay: 0.75s;
-			background-image: linear-gradient(to top, rgba(19, 21, 25, 0.5), rgba(19, 21, 25, 0.5)), url("images/dark.jpg");
+			background-image: linear-gradient(to top, rgba(19, 21, 25, 0.5), rgba(19, 21, 25, 0.5));
 			background-size: auto, 256px 256px;
 			background-position: center, center;
 			background-repeat: no-repeat, repeat;
@@ -1468,6 +1491,10 @@ input, select, textarea {
 
 		@media screen and (max-width: 736px) {
 
+			#header {
+				margin-bottom: 20vh;
+			}
+
 			#header > * {
 				margin-top: 2rem;
 			}
@@ -1501,6 +1528,7 @@ input, select, textarea {
 
 			#header {
 				padding: 1.5rem 0;
+				margin-top: 5vh;
 			}
 
 				#header .content .inner {
