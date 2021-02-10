@@ -1495,6 +1495,12 @@ input, select, textarea {
 				margin-bottom: 20vh;
 			}
 
+			#header .icon{
+				height: 27px;
+				width: 40px;
+			}
+
+
 			#header > * {
 				margin-top: 2rem;
 			}
@@ -1531,8 +1537,17 @@ input, select, textarea {
 				margin-top: 5vh;
 			}
 
+			#header .icon{
+				height: 27px;
+				width: 40px;
+			}
+
 				#header .content .inner {
-					padding: 2.5rem 0;
+					padding: 2.5rem 0.5rem;
+				}
+
+				#header .content p {
+					font-size: 12px;
 				}
 
 				#header nav ul {
@@ -1563,14 +1578,6 @@ input, select, textarea {
 				#header nav.use-middle:after {
 					display: none;
 				}
-
-		}
-
-		@media screen and (max-width: 480px) {
-
-			#header .content p {
-				/* font-size: 15px; */
-			}
 
 		}
 
