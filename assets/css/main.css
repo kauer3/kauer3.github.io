@@ -1569,7 +1569,7 @@ input, select, textarea {
 		@media screen and (max-width: 480px) {
 
 			#header .content p {
-				font-size: 15px;
+				/* font-size: 15px; */
 			}
 
 		}
