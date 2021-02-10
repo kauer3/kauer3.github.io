@@ -1325,7 +1325,8 @@ input, select, textarea {
 		@media screen and (max-width: 480px) {
 
 			#wrapper {
-				padding: 1rem;
+				padding-bottom: 1rem;
+				padding-top: 6vh;
 			}
 
 		}
@@ -1572,6 +1573,10 @@ input, select, textarea {
 			#header {
 				padding: 1.5rem 0;
 				margin-top: 5vh;
+				/* position: relative; */
+				/* top: 50%; */
+				/* transform: translateY(-50%); */
+				/* padding-top: 10vh; */
 			}
 
 			/* #header .icon{ */
