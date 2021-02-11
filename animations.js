@@ -8,7 +8,7 @@ particlesJS.load('particles-js', 'particles.json', function () {
 
 const cursor = document.querySelector('.cursor');
 document.addEventListener('mousemove', e => {
-    cursor.setAttribute('style', 'top: ' + (e.pageY - 5) + 'px; left:' + (e.pageX - 3) + 'px;')
+    cursor.setAttribute('style', 'top: ' + (e.pageY - 5) + 'px; left:' + (e.pageX - 4.1) + 'px;')
 })
 
 document.addEventListener('click', () => {

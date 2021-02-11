@@ -36,7 +36,7 @@ body {
 
 #particles-js {
 	position: absolute;
-	height: 101vh;
+	height: 100vh;
 	width: 100%;
 	/* z-index: 0; */
 }
