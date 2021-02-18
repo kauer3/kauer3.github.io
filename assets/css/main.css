@@ -1761,6 +1761,28 @@ input, select, textarea {
 
 		}
 
+/* Carousel */
+
+		#main #work {
+			padding-left: 10vh;
+			padding-right: 10vh;
+			padding-bottom: 3vh;
+		}
+
+		.carousel-control-prev {
+			left: -10vh;
+		}
+
+		.carousel-control-next {
+			right: -10vh;
+		}
+
+		.carousel-indicators {
+			bottom: -4vh;
+		}
+
+
+
 /* Footer */
 
 	#footer {

@@ -1,9 +1,10 @@
-<!DOCTYPE HTML>
-<html>
+<!doctype html>
+<html lang="en">
 	<head>
 		<title>Index</title>
 		<meta charset="utf-8"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 		<link rel="stylesheet" href="assets/css/main.css"/>
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css"/></noscript>
 	</head>
@@ -22,9 +23,9 @@
 						</div>
 						<nav>
 							<ul>
-								<li><a href="#intro">Intro</a></li>
-								<li><a href="#work">Work</a></li>
 								<li><a href="#about">About</a></li>
+								<li><a href="#skills">Skills</a></li>
+								<li><a href="#work">Work</a></li>
 								<li><a href="#contact">Contact</a></li>
 							</ul>
 						</nav>
@@ -33,27 +34,58 @@
 				<!-- Main -->
 					<div id="main">
 
-						<!-- Intro -->
-							<article id="intro">
-								<h2 class="major">Intro</h2>
-								<span class="image main"><img src="images/pic01.jpg" alt="" /></span>
-								<p>Aenean ornare velit lacus, ac varius enim ullamcorper eu. Proin aliquam facilisis ante interdum congue. Integer mollis, nisl amet convallis, porttitor magna ullamcorper, amet egestas mauris. Ut magna finibus nisi nec lacinia. Nam maximus erat id euismod egestas. By the way, check out my <a href="#work">awesome work</a>.</p>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tristique libero eu nibh porttitor fermentum. Nullam venenatis erat id vehicula viverra. Nunc ultrices eros ut ultricies condimentum. Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In non lorem sit amet elit placerat maximus. Pellentesque aliquam maximus risus, vel sed vehicula.</p>
+						<!-- About -->
+							<article id="about">
+								<h2 class="major">About</h2>
+								<p>Kauê Reis de Assis Pereira<br>25 years<br>Joinville, Santa Catarina, Brazil.</p>
+								<p>In 2020 I started studying JavaScript and fell in love with programming. I attended CS50x, an online version of the largest and most popular course at Harvard University, presenting as my final project a Google Chrome extension. Today I study CS50 Web Programming with Python and Javascript and study daily alternating course projects and creating personal projects and contributions to open source projects.</p>
+								<p>Currently, I am looking for an front-end position in order to acquire knowledge and experience and improve my qualities.</p>
 							</article>
 
 						<!-- Work -->
 							<article id="work">
 								<h2 class="major">Work</h2>
-								<span class="image main"><img src="images/pic02.jpg" alt="" /></span>
-								<p>Adipiscing magna sed dolor elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices.</p>
-								<p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus pharetra. Pellentesque condimentum sem. In efficitur ligula tate urna. Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus amet feugiat tempus.</p>
+								<p class="major">Oops, I'm still working on this section...</p>
+								<div id="carousel" class="carousel slide" data-keyboard="true" data-wrap="true" data-ride="carousel">
+									<ol class="carousel-indicators">
+										<li data-target="#carousel" data-slide-to="0" class="active"></li>
+										<li data-target="#carousel" data-slide-to="1"></li>
+										<li data-target="#carousel" data-slide-to="2"></li>
+									</ol>
+									<div class="carousel-inner">
+										<div class="carousel-item active">
+											<h2 class="major">Slang - Text to Speech</h2>
+											<p>This is my CS50x final project, a Chrome extension that converts text to speech. Just select any text on any website and hit play.</p>
+											<p>Download at the <a href="https://chrome.google.com/webstore/detail/slang-text-to-speech/enkmbkhkbdiaafkmofbmdahclajelgfh">Chrome Web Store</a> and access the project's <a href="https://github.com/kauer3/Slang-Text-to-Speech">repository on GitHub</a></p>
+										</div>
+										<div class="carousel-item">
+											<h2 class="major">Paste-Replace.vim</h2>
+											<p>TODO add description</p>
+										</div>
+										<div class="carousel-item">
+											<h2 class="major">Project 3</h2>
+											<p>Description</p>
+										</div>
+									</div>
+									<a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+										<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+										<span class="sr-only">Previous</span>
+									</a>
+									<a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+										<span class="carousel-control-next-icon" aria-hidden="true"></span>
+										<span class="sr-only">Next</span>
+									</a>
+								</div>
 							</article>
 
 						<!-- About -->
-							<article id="about">
-								<h2 class="major">About</h2>
-								<span class="image main"><img src="images/pic03.jpg" alt="" /></span>
-								<p>Lorem ipsum dolor sit amet, consectetur et adipiscing elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices. Aliquam libero et malesuada fames ac ante ipsum primis in faucibus. Cras viverra ligula sit amet ex mollis mattis lorem ipsum dolor sit amet.</p>
+							<article id="skills">
+								<h2 class="major">Skills</h2>
+								JavaScript, Python, C, CSS, HTML, SQL;<br>
+								React, jQuery, Django, Flask, Bootstrap, SASS;<br>
+								Git, GitHub;<br>
+								Vim, Visual Studio Code, ZSH, Windows Subsystem for Linux;<br>
+
 							</article>
 
 						<!-- Contact -->
@@ -90,12 +122,15 @@
 		<div class="bg"></div>
 		<div class="cursor"></div>
 
+		<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 		<script src="assets/js/jquery.min.js"></script>
 		<script src="assets/js/browser.min.js"></script>
 		<script src="assets/js/breakpoints.min.js"></script>
 		<script src="assets/js/util.js"></script>
 		<script src="assets/js/main.js"></script>
-		<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
 		<script src="animations.js"></script>
 	</body>
 </html>
