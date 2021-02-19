@@ -329,6 +329,16 @@ input, select, textarea {
 		margin: 2.75rem 0;
 	}
 
+	/* nav ul li a { */
+	/* 	font-weight: 600; */
+	/* } */
+
+	nav ul li a:hover {
+		color: #00dddd;
+		font-weight: 600;
+		background-color: rgba(70, 70, 70, 0.075);
+	}
+
 	.align-left {
 		text-align: left;
 	}
@@ -424,6 +434,10 @@ input, select, textarea {
 		line-height: 1.5;
 		margin: 0 0 1rem 0;
 		text-transform: uppercase;
+	}
+
+	.icon:hover {
+		color: #00ffff99;
 	}
 
 	textarea {
@@ -1483,11 +1497,11 @@ input, select, textarea {
 				}
 
 					#header nav ul li a:hover {
-						background-color: rgba(255, 255, 255, 0.075);
+						background-color: rgba(0, 15, 15, 0.5);
 					}
 
 					#header nav ul li a:active {
-						background-color: rgba(255, 255, 255, 0.175);
+						background-color: rgba(0, 255, 255, 1);
 					}
 
 		#header nav.use-middle:after {
@@ -1778,11 +1792,11 @@ input, select, textarea {
 		}
 
 		.carousel-control-prev {
-			left: -10vh;
+			left: -4.3rem;
 		}
 
 		.carousel-control-next {
-			right: -10vh;
+			right: -7.3rem;
 		}
 
 		#carouselExampleCaptions {
@@ -1794,24 +1808,23 @@ input, select, textarea {
 			padding-left: 20px;
 		}
 
-		.carousel-header {
-			display: inline-block;
-			white-space: nowrap;
-			top: -10px;
-		}
+		/* .carousel-header { */
+		/* 	display: inline-block; */
+		/* 	white-space: nowrap; */
+		/* 	top: -10px; */
+		/* } */
 
 		.carousel-title-1 {
 			display: inline-block;
-			top: 50px;
+			top: -10px;
 			flex: right;
 		}
 
-		#slang {
-			display: inline-block;
-			/* poistion: absolute; */
-			/* display: block; */
-			margin-top: 50px;
-		}
+		/* #slang { */
+		/* 	poistion: absolute; */
+		/* 	/1* display: block; *1/ */
+		/* 	/1* margin: auto; *1/ */
+		/* } */
 
 /* Footer */
 
