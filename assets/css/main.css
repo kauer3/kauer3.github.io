@@ -1764,9 +1764,17 @@ input, select, textarea {
 /* Carousel */
 
 		#main #work {
-			padding-left: 10vh;
-			padding-right: 10vh;
+			width: 70rem;
+			height: 80vh;
+			padding-left: 13vh;
+			padding-right: 13vh;
 			padding-bottom: 3vh;
+		}
+
+		.control {
+			height: 5rem;
+			width: 3rem;
+			top: 23vh;
 		}
 
 		.carousel-control-prev {
@@ -1777,11 +1785,33 @@ input, select, textarea {
 			right: -10vh;
 		}
 
-		.carousel-indicators {
-			bottom: -4vh;
+		#carouselExampleCaptions {
+			height: 100%;
+			width: 95%;
+		}
+		
+		.carousel-item {
+			padding-left: 20px;
 		}
 
+		.carousel-header {
+			display: inline-block;
+			white-space: nowrap;
+			top: -10px;
+		}
 
+		.carousel-title-1 {
+			display: inline-block;
+			top: 50px;
+			flex: right;
+		}
+
+		#slang {
+			display: inline-block;
+			/* poistion: absolute; */
+			/* display: block; */
+			margin-top: 50px;
+		}
 
 /* Footer */
 
