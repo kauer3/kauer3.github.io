@@ -1501,7 +1501,8 @@ input, select, textarea {
 					}
 
 					#header nav ul li a:active {
-						background-color: rgba(0, 255, 255, 1);
+						background-color: rgba(0, 255, 255, 0.2);
+						color: rgba(252, 123, 3, 1);
 					}
 
 		#header nav.use-middle:after {
@@ -1778,8 +1779,8 @@ input, select, textarea {
 /* Carousel */
 
 		#main #work {
-			width: 70rem;
-			height: 80vh;
+			/* width: 70rem; */
+			/* height: 80vh; */
 			padding-left: 13vh;
 			padding-right: 13vh;
 			padding-bottom: 3vh;
@@ -1796,7 +1797,7 @@ input, select, textarea {
 		}
 
 		.carousel-control-next {
-			right: -7.3rem;
+			right: -4.3rem;
 		}
 
 		#carouselExampleCaptions {
@@ -1814,11 +1815,11 @@ input, select, textarea {
 		/* 	top: -10px; */
 		/* } */
 
-		.carousel-title-1 {
-			display: inline-block;
-			top: -10px;
-			flex: right;
-		}
+		/* .carousel-title-1 { */
+		/* 	display: inline-block; */
+		/* 	top: -10px; */
+		/* 	flex: right; */
+		/* } */
 
 		/* #slang { */
 		/* 	poistion: absolute; */
