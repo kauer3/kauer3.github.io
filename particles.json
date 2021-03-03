@@ -4,7 +4,7 @@
       "value": 50,
       "density": {
         "enable": true,
-        "value_area": 300
+        "value_area": 600
       }
     },
     "color": {
@@ -29,7 +29,7 @@
       "value": 0.7,
       "random": true,
       "anim": {
-        "enable": true,
+        "enable": false,
         "speed": 2,
         "opacity_min": 0.1,
         "sync": false
@@ -40,7 +40,7 @@
       "random": true,
       "anim": {
         "enable": true,
-        "speed": 5,
+        "speed": 4,
         "size_min": 0.1,
         "sync": false
       }
@@ -89,13 +89,13 @@
       },
       "bubble": {
         "distance": 400,
-        "size": 5,
+        "size": 4,
         "duration": 1,
         "opacity": 0.5,
         "speed": 3
       },
       "repulse": {
-        "distance": 300,
+        "distance": 280,
         "duration": 0.4
       },
       "push": {

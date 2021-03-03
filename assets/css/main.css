@@ -729,9 +729,9 @@ input, select, textarea {
 			max-width: 40%;
 		}
 
-			.image.left img, .image.right img {
-				width: 100%;
-			}
+		.image.left img, .image.right img {
+			width: 100%;
+		}
 
 		.image.left {
 			float: left;
@@ -794,6 +794,7 @@ input, select, textarea {
 		}
 
 	ul {
+		/* background-color: transparent; */
 		list-style: disc;
 		margin: 0 0 2rem 0;
 		padding-left: 1em;
@@ -983,13 +984,14 @@ input, select, textarea {
 		list-style: none;
 		padding-left: 0;
 		float: right;
-		width: 150px;
+		width: 190px;
 	}
 
 		ul.icons li {
-			/* display: inline-block; */
+			display: inline-block;
 			padding: 0 0 0 15%;
 			bottom: 33%;
+			position: relative;
 			float: right;
 		}
 
@@ -1041,6 +1043,11 @@ input, select, textarea {
 							line-height: 2.6rem;
 							top: -10px;
 						}
+
+						/* ul.icons li:last-child { */
+						/* 	margin-left: 0; */
+						/* } */
+
 					}
 
 					/* 	ul.actions { */
