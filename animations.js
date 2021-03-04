@@ -14,14 +14,14 @@ gsap.registerPlugin(ScrollTrigger);
 //     yPercent: -100 * (sections.length - 1),
 ScrollTrigger.create({
     trigger: "body",
-    start: "top top",
-    end: "bottom bottom",
+    // start: "top top",
+    // end: "bottom bottom",
     pin: "#particles-js",
     pinSpacing: true
 })
 
 const projects = gsap.utils.toArray('.project');
-const sections = gsap.utils.toArray('.snap-section');
+var sections = gsap.utils.toArray('.snap-section');
 
 let n = 0;
 projects.forEach(project => {
@@ -35,21 +35,30 @@ projects.forEach(project => {
         x: origin,
         opacity: 0,
         // yPercent: -1 / (6 - 1),
+        // pin: true,
         scrollTrigger: {
-            start: "center bottom ",
-            end: "center center",
+            start: "center bottom",
+            end: "top center",
             trigger: project,
             scrub: true,
             toggleActions: "play reverse play reverse",
-            snap: 1.5,
+            // markers: true,
             // pin: true
-            // snapTo: ".project", // snap to the closest label in the timeline
+            // snap: {
+            //     snapTo: sections//".project", // snap to the closest label in the timeline
             // duration: {min: 0.2, max: 3}, // the snap animation should be at least 0.2 seconds, but no more than 3 seconds (determined by velocity)
             // delay: 0.2, // wait 0.2 seconds from the last scroll event before doing the snapping
             // ease: "none" // the ease of the snap animation ("power3" by default)
             // }
         }
     })
+});
+
+ScrollTrigger.create({
+    snap: {
+        snapTo: 1 / 5,
+        duration: 1
+    }
 });
 
 // gsap.to("#first-project", {
