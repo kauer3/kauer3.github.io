@@ -37,11 +37,12 @@ projects.forEach(project => {
         // yPercent: -1 / (6 - 1),
         // pin: true,
         scrollTrigger: {
-            start: "center bottom",
+            start: "bottom bottom",
             end: "top center",
             trigger: project,
-            scrub: true,
+            scrub: 0.5,
             toggleActions: "play reverse play reverse",
+            // duration: 0.5
             // markers: true,
             // pin: true
             // snap: {
@@ -57,7 +58,7 @@ projects.forEach(project => {
 ScrollTrigger.create({
     snap: {
         snapTo: 1 / 5,
-        duration: 1
+        // duration: 1.5
     }
 });
 
