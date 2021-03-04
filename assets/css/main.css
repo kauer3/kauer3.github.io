@@ -25,9 +25,9 @@ footer, header, hgroup, menu, nav, section {
 	display: block;}
 
 html, body {
-	height: 100vh;
+	height: 200vh;
 	margin: 0;
-	overflow: hidden;
+	overflow-x: hidden;
 	cursor: url(/images/cursor.png), auto;
 }
 
@@ -761,9 +761,9 @@ input, select, textarea {
 			width: 100%;
 		}
 
-			.image.main img {
-				width: 100%;
-			}
+		.image.main img {
+			width: 100%;
+		}
 
 		@media screen and (max-width: 736px) {
 
@@ -794,7 +794,7 @@ input, select, textarea {
 		}
 
 	ul {
-		/* background-color: transparent; */
+		background-color: transparent;
 		list-style: disc;
 		margin: 0 0 2rem 0;
 		padding-left: 1em;
