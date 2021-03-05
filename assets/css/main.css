@@ -1786,7 +1786,7 @@ input, select, textarea {
 
 /* Carousel */
 
-		#main #work {
+		.project {
 			/* width: 70rem; */
 			/* height: 80vh; */
 			padding-left: 13vh;
@@ -1805,7 +1805,7 @@ input, select, textarea {
 		}
 
 		.carousel-control-next {
-			right: -4.3rem;
+			right: -8.3rem;
 		}
 
 		#carouselExampleCaptions {
@@ -1814,6 +1814,7 @@ input, select, textarea {
 		}
 		
 		.carousel-item {
+			min-height: 250px;
 			padding-left: 20px;
 		}
 
@@ -1867,7 +1868,7 @@ input, select, textarea {
 	/* 	z-index: 3; */
 	/* } */
 
-		#projects article {
+		#projects .container {
 			margin: 0;
 			/* position: absolute; */
 			top: 45%;
@@ -1876,15 +1877,15 @@ input, select, textarea {
 			transform: translate(-50%, -50%);
 			padding: 4.5rem 2.5rem 1.5rem 2.5rem ;
 			position: relative;
-			width: 45rem;
+			width: 65rem;
 			max-width: 100%;
-			height: 50vh;
+			height: 80vh;
 			background-color: rgba(1, 2, 8, 0.7);
 			border-radius: 4px;
 			opacity: 1;
 		}
 
-		#projects div {
+		#projects .snap-section {
 			-moz-transform: translateY(0.25rem);
 			-webkit-transform: translateY(0.25rem);
 			-ms-transform: translateY(0.25rem);
