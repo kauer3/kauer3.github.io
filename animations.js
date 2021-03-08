@@ -32,6 +32,7 @@ var sections = gsap.utils.toArray('.snap-section');
 let n = 0;
 let i = 0;
 let contents = []
+let origin;
 containers.forEach(container => {
     n += 1;
     switch (n) {
@@ -63,6 +64,11 @@ containers.forEach(container => {
     };
     gsap.from(container, {
         // x: origin,
+        css: {
+            height: 0,
+            width: 950,
+            // backgroundColor: "transparent"
+        },
         opacity: 0,
         // yPercent: -1 / (6 - 1),
         // pin: true,
@@ -70,7 +76,7 @@ containers.forEach(container => {
             start: "center bottom",
             end: "center center",
             trigger: container,
-            scrub: 0.4,
+            scrub: 2,
             toggleActions: "play reverse play reverse",
             // duration: 0.5
             // markers: true,
@@ -101,7 +107,7 @@ containers.forEach(container => {
                 start: "top center",
                 end: "top center",
                 trigger: container,
-                scrub: 1,
+                scrub: 1.5,
                 toggleActions: "play reverse play reverse",
                 // duration: 0.5
                 // markers: true,
@@ -131,10 +137,10 @@ titles.forEach(title => {
         // yPercent: -1 / (6 - 1),
         // pin: true,
         scrollTrigger: {
-            start: "center center",
+            start: "50%-=800px",
             end: "top center",
             trigger: title,
-            scrub: 1,
+            scrub: 0.4,
             toggleActions: "play reverse play reverse",
             // duration: 0.5
             // markers: true,
