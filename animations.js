@@ -1,11 +1,11 @@
 // Particles
 
-// particlesJS.load('particles-js', 'particles.json', function () {
-//     console.log('particles.json loaded!');
-// });
+particlesJS.load('particles-js', 'particles.json', function () {
+    console.log('particles.json loaded!');
+});
 
 // Testing TsParticles instead of ParticlesJS
-tsParticles.loadJSON('particles-js', 'particles.json');
+// tsParticles.loadJSON('particles-js', 'particles.json');
 
 // Cursor
 
@@ -66,17 +66,17 @@ containers.forEach(container => {
         // x: origin,
         css: {
             height: 0,
-            width: 950,
+            width: "-=250",
             // backgroundColor: "transparent"
+            opacity: 0,
         },
-        opacity: 0,
         // yPercent: -1 / (6 - 1),
         // pin: true,
         scrollTrigger: {
             start: "center bottom",
             end: "center center",
             trigger: container,
-            scrub: 2,
+            scrub: 1.5,
             toggleActions: "play reverse play reverse",
             // duration: 0.5
             // markers: true,
@@ -107,7 +107,7 @@ containers.forEach(container => {
                 start: "top center",
                 end: "top center",
                 trigger: container,
-                scrub: 1.5,
+                scrub: 3,
                 toggleActions: "play reverse play reverse",
                 // duration: 0.5
                 // markers: true,
@@ -191,7 +191,8 @@ titles.forEach(title => {
 ScrollTrigger.create({
     snap: {
         snapTo: 1 / 5,
-        duration: 2
+        duration: 2,
+        ease: "back"
     }
 });
 
