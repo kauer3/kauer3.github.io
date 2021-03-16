@@ -191,8 +191,8 @@ titles.forEach(title => {
 ScrollTrigger.create({
     snap: {
         snapTo: 1 / 5,
-        duration: 2,
-        ease: "back"
+        duration: 1,
+        ease: "sine"
     }
 });
 
