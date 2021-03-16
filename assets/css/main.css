@@ -1932,6 +1932,10 @@ input, select, textarea {
 			height: 100vh;
 		}
 
+		#projects h2 {
+			position: absolute;
+		}
+
 		#first-project img {
 			float: right;
 			margin-left: 9.1%;
