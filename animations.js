@@ -135,6 +135,7 @@ titles.forEach(title => {
     gsap.from(title, {
         x: origin,
         opacity: 0,
+        width: 1,
         // css: {
         //     fontSize: "10px",
         //     // backgroundColor: "transparent"
