@@ -1932,9 +1932,13 @@ input, select, textarea {
 			height: 100vh;
 		}
 
-		#projects h2 {
-			position: absolute;
-		}
+		/* #projects h2 { */
+		/* 	position: absolute; */
+		/* } */
+
+		/* #projects p { */
+		/* 	margin-top: 50px; */
+		/* } */
 
 		#first-project img {
 			float: right;
