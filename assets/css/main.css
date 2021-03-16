@@ -253,7 +253,7 @@ input, select, textarea {
 	/* } */
 
 	h2 {
-		font-size: 1.5rem;
+		font-size: 1.7rem;
 		line-height: 1.4;
 		letter-spacing: 0.5rem;
 	}
@@ -1906,7 +1906,7 @@ input, select, textarea {
 			left: 50%;
 			-ms-transform: translate(-50%, -50%);
 			transform: translate(-50%, -50%);
-			padding: 2.5rem 2.5rem 1.5rem 2.5rem ;
+			padding: 4% 5% 5% 5%;
 			position: relative;
 			width: 65rem;
 			max-width: 100%;
@@ -1914,6 +1914,7 @@ input, select, textarea {
 			background-color: rgba(1, 2, 8, 0.7);
 			border-radius: 4px;
 			opacity: 1;
+			font-size: 1.1rem;
 		}
 
 		#projects .snap-section {
@@ -1933,8 +1934,8 @@ input, select, textarea {
 
 		#first-project img {
 			float: right;
-			right: 9px;
-			margin-left: 4rem;
+			margin-left: 9%;
+			margin-top: 25px;
 		}
 
 		@media screen and (max-width: 480px) {

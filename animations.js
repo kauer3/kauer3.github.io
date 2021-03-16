@@ -101,13 +101,14 @@ containers.forEach(container => {
         gsap.from(content, {
             x: origin,
             opacity: 0,
+            width: 9000,
             // yPercent: -1 / (6 - 1),
             // pin: true,
             scrollTrigger: {
                 start: "top center",
                 end: "top center",
                 trigger: container,
-                scrub: 3,
+                scrub: 2,
                 toggleActions: "play reverse play reverse",
                 // duration: 0.5
                 // markers: true,
@@ -127,13 +128,17 @@ containers.forEach(container => {
 titles.forEach(title => {
     n += 1;
     if (n % 2 === 0) {
-        origin = -500;
+        origin = -900;
     } else {
-        origin = 500;
+        origin = 900;
     };
     gsap.from(title, {
         x: origin,
         opacity: 0,
+        // css: {
+        //     fontSize: "10px",
+        //     // backgroundColor: "transparent"
+        // },
         // yPercent: -1 / (6 - 1),
         // pin: true,
         scrollTrigger: {
