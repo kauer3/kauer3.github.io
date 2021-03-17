@@ -1949,7 +1949,7 @@ input, select, textarea {
 			position: relative;
 			width: 80%;
 			max-width: 100%;
-			height: auto;
+			/* height: auto; */
 			max-height: 95vh;
 			background-color: rgba(1, 2, 8, 0.7);
 			border-radius: 5px;
@@ -2017,7 +2017,6 @@ input, select, textarea {
 			#projects .container {
 				/* padding: 3% 3% 3% 3%; */
 				top:50%;
-				background-color: yellow;
 				width: 85%;
 			}
 
@@ -2035,7 +2034,6 @@ input, select, textarea {
 		@media screen and (max-width: 1200px) {
 
 			#projects .container {
-				background-color: red;
 				/* width: 90%; */
 			}
 
@@ -2050,7 +2048,6 @@ input, select, textarea {
 		/* @media screen and (max-width: 1128px) { */
 
 		/* 	#projects .container { */
-		/* 		background-color: blue; */
 		/* 		padding: 3% 2% 2% 2%; */
 		/* 	} */
 
@@ -2064,7 +2061,6 @@ input, select, textarea {
 		@media screen and (max-width: 1050px) {
 
 			#projects .container {
-				background-color: green;
 				padding: 3% 2% 2% 2%;
 			}
 
@@ -2079,7 +2075,6 @@ input, select, textarea {
 		@media screen and (max-width: 821px) {
 
 			#projects .container {
-				background-color: brown;
 				padding: 6% 4% 4% 6%;
 			}
 
@@ -2094,25 +2089,14 @@ input, select, textarea {
 
 		}
 
-		/* @media screen and (max-width: 736px) { */
+		@media screen and (max-width: 589px) {
 
-		/* 	#projects .container { */
-		/* 		top: 47%; */
-		/* 		/1* bottom: 50%; *1/ */
-		/* 		left: 50%; */
-		/* 		/1* right: 50%; *1/ */
-		/* 		/1* height: 90vh; *1/ */
-		/* 		/1* padding: 2% 0% 2% 0% ; *1/ */
-		/* 		/1* margin-bottom: 10vh; *1/ */
-		/* 		/1* margin-top: 10vh; *1/ */
-		/* 		margin: 0; */
-		/* 	} */
+			#projects h2 {
+				font-size: 1.2rem;
+				letter-spacing: 0.2rem;
+			}
 
-		/* 	#projects .snap-section { */
-		/* 		padding: 1% 1% 1% 1% ; */
-		/* 	} */
-
-		/* } */
+		}
 
 		@media screen and (max-width: 480px) {
 
@@ -2120,6 +2104,16 @@ input, select, textarea {
 				width: 95%;
 				top:40%;
 				padding: 6% 3% 6% 3% ;
+			}
+
+		}
+
+		@media screen and (max-width: 360px) {
+
+			#projects .container {
+				/* width: 95%; */
+				top:47%;
+				/* padding: 6% 3% 6% 3% ; */
 			}
 
 		}
