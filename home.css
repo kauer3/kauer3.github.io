@@ -1,11 +1,11 @@
-body {
-  background-image: url("/images/back.jpg");
-  background-size: cover;
-}
+/* body { */
+/*   background-image: url("/images/back.jpg"); */
+/*   background-size: cover; */
+/* } */
 
-#particles-js {
-  height: 100%;
-  width: 100%;
-  /* position: absolute; */
-  z-index: -1;
-}
+/* #particles-js { */
+/*   height: 100%; */
+/*   width: 100%; */
+/*   /1* position: absolute; *1/ */
+/*   z-index: -1; */
+/* } */

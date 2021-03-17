@@ -66,14 +66,14 @@ containers.forEach(container => {
         // x: origin,
         css: {
             height: 0,
-            width: "-=250",
+            // width: "-=250",
             // backgroundColor: "transparent"
             opacity: 0,
         },
         // yPercent: -1 / (6 - 1),
         // pin: true,
         scrollTrigger: {
-            start: "center bottom",
+            start: "bottom bottom",
             end: "center center",
             trigger: container,
             scrub: 0.5,
@@ -101,7 +101,7 @@ containers.forEach(container => {
         gsap.from(content, {
             x: origin,
             opacity: 0,
-            width: 9000,
+            // width: 9000, was causing content to not resize responsivelly
             // yPercent: -1 / (6 - 1),
             // pin: true,
             scrollTrigger: {

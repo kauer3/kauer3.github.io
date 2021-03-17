@@ -37,6 +37,41 @@ body {
 	overflow-x: hidden;
 }
 
+::-webkit-scrollbar {
+		width: 10px;
+		cursor: pointer;
+}
+
+::-webkit-scrollbar:hover {
+		width: 20px;
+		/* cursor: pointer; */
+}
+
+::-webkit-scrollbar-corner, ::-webkit-resizer {
+		color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+		background: #003355;
+		border-radius: 13px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+		background:  #00aaaa;
+}
+
+::-webkit-scrollbar-track {
+		background:  #001122;
+		/* box-shadow: inset 0 0 3px #007777; */ 
+		border-radius: 3px;
+}
+
+::-webkit-scrollbar-track:hover {
+		background:  #002233;
+		box-shadow: inset 0 0 3px #007777; 
+		border-radius: 3px;
+}
+
 #particles-js {
 	position: absolute;
 	height: 100vh;
@@ -226,7 +261,7 @@ input, select, textarea {
 	}
 
 	p {
-		margin: 0 0 2rem 0;
+		margin: 1.8rem 0 0 0;
 	}
 
 	h1, h2, h3, h4, h5, h6 {
@@ -1844,14 +1879,6 @@ input, select, textarea {
 
 		@media screen and (max-width: 480px) {
 
-			.project {
-				/* width: %; */
-				height: 85vh;
-				padding-left: 1rem;
-				padding-right: 1rem;
-				/* padding-bottom: 3vh; */
-			}
-
 			button.control {
 				display: none;
 			}
@@ -1914,18 +1941,18 @@ input, select, textarea {
 
 		#projects .container {
 			margin: 0;
-			position: absolute;
-			top: 45%;
+			top: 45.5%;
 			left: 50%;
 			-ms-transform: translate(-50%, -50%);
 			transform: translate(-50%, -50%);
 			padding: 4% 5% 5% 5%;
 			position: relative;
-			width: 65rem;
+			width: 80%;
 			max-width: 100%;
-			height: 80vh;
+			height: auto;
+			max-height: 95vh;
 			background-color: rgba(1, 2, 8, 0.7);
-			border-radius: 4px;
+			border-radius: 5px;
 			opacity: 1;
 			font-size: 1.1rem;
 		}
@@ -1948,34 +1975,151 @@ input, select, textarea {
 		#projects .project {
 			position: relative;
 			width: 100%;
-			/* height: 100vh; */
+			height: auto;
+			padding-left: 1rem;
+			padding-right: 1rem;
 		}
 
-		#first-project h2 {
-			position: absolute;
-		}
+		/* #projects .project p { */
+		/* 	position: !relative; */
+		/* 	/1* width: 100%; *1/ */
+		/* } */
 
+		/* .project { */
+		/* 	/1* width: %; *1/ */
+		/* 	height: 85vh; */
+		/* 	padding-left: 1rem; */
+		/* 	padding-right: 1rem; */
+		/* 	/1* padding-bottom: 3vh; *1/ */
+		/* } */
+
+		/* #first-project h2 { */
+		/* 	position: relative; */
+		/* 	/1* top: -20px; *1/ */
+		/* } */
+
+		/* #first-project div { */
+		/* 	top: 20px; */
+		/* } */
 
 		#first-project img {
 			float: right;
 			margin-left: 9.1%;
-			margin-top: 25px;
+			margin-top: -25px;
 		}
+
+		@media screen and (max-width: 1292px) {
+
+			#projects .snap-section {
+				padding: 3% 3% 3% 3%;
+			}
+
+			#projects .container {
+				/* padding: 3% 3% 3% 3%; */
+				top:50%;
+				background-color: yellow;
+				width: 85%;
+			}
+
+			#first-project img {
+				margin-left: 5%;
+			}
+
+			/* #first-project img { */
+			/* 	/1* opacity: 0; *1/ */
+			/* 	width: 0px; */
+			/* } */
+
+		}
+
+		@media screen and (max-width: 1200px) {
+
+			#projects .container {
+				background-color: red;
+				/* width: 90%; */
+			}
+
+			#first-project img {
+				margin-left: 3%;
+				width: 30%;
+				margin-top: 2.8%;
+			}
+
+		}
+
+		/* @media screen and (max-width: 1128px) { */
+
+		/* 	#projects .container { */
+		/* 		background-color: blue; */
+		/* 		padding: 3% 2% 2% 2%; */
+		/* 	} */
+
+		/* 	#first-project img { */
+		/* 		margin-left: 9.1%; */
+		/* 		margin-top: -25px; */
+		/* 	} */
+
+		/* } */
+
+		@media screen and (max-width: 1050px) {
+
+			#projects .container {
+				background-color: green;
+				padding: 3% 2% 2% 2%;
+			}
+
+			#first-project img {
+				/* opacity: 0; */
+				width: 200px;
+				margin-top: 3%;
+			}
+
+		}
+
+		@media screen and (max-width: 821px) {
+
+			#projects .container {
+				background-color: brown;
+				padding: 6% 4% 4% 6%;
+			}
+
+			#first-project img {
+				opacity: 0;
+				width: 0px;
+			}
+
+			#projects .project p {
+				margin-top: 3%;
+			}
+
+		}
+
+		/* @media screen and (max-width: 736px) { */
+
+		/* 	#projects .container { */
+		/* 		top: 47%; */
+		/* 		/1* bottom: 50%; *1/ */
+		/* 		left: 50%; */
+		/* 		/1* right: 50%; *1/ */
+		/* 		/1* height: 90vh; *1/ */
+		/* 		/1* padding: 2% 0% 2% 0% ; *1/ */
+		/* 		/1* margin-bottom: 10vh; *1/ */
+		/* 		/1* margin-top: 10vh; *1/ */
+		/* 		margin: 0; */
+		/* 	} */
+
+		/* 	#projects .snap-section { */
+		/* 		padding: 1% 1% 1% 1% ; */
+		/* 	} */
+
+		/* } */
 
 		@media screen and (max-width: 480px) {
 
 			#projects .container {
-				top: 39.5%;
-				height: 90vh;
-				padding: 2rem 0rem 2rem 0rem ;
-				/* margin-bottom: 10vh; */
-				/* margin-top: 10vh; */
-				margin: auto;
-			}
-
-			#projects .snap-section {
-				padding: 0.2rem 1.2rem 0.2rem 1.2rem ;
-				/* position: relative; */
+				width: 95%;
+				top:40%;
+				padding: 6% 3% 6% 3% ;
 			}
 
 		}
