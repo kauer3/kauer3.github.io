@@ -128,9 +128,9 @@ containers.forEach(container => {
 titles.forEach(title => {
     n += 1;
     if (n % 2 === 0) {
-        origin = -500;
+        origin = -700;
     } else {
-        origin = 500;
+        origin = 700;
     };
     gsap.from(title, {
         x: origin,
@@ -145,7 +145,7 @@ titles.forEach(title => {
             start: "50%-=800px",
             end: "top center",
             trigger: title,
-            scrub: 0.4,
+            scrub: 0.1,
             toggleActions: "play reverse play reverse",
             // duration: 0.5
             // markers: true,
