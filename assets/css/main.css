@@ -26,9 +26,9 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 
-html {
-	scroll-behavior: smooth;
-}
+/* html { */
+/* 	scroll-behavior: smooth; */
+/* } */
 
 html, body {
 	height: 500vh;
