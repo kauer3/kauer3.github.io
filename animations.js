@@ -27,11 +27,12 @@ var sections = gsap.utils.toArray('.snap-section');
 
 // TODO Finished implementing this
 document.querySelector("#smooth").addEventListener("click", function () {
-    e.preventDefault();
+    // e.preventDefault();
     // gsap.to(window, {duration: 2, scrollTo: "#projects"});
     // const section = document.querySelector(link.getAttribute("href"));
     // return window.scrollTo("#projects"));
-    gsap.to(sections, 2, {scrollTo: "#smooth"});
+    // gsap.to(window, 1, {scrollTo: section});
+    gsap.to(window, {duration: 1, scrollTo: ".section1"});
 });
 
 let n = 0;
