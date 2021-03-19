@@ -2125,9 +2125,7 @@ input, select, textarea {
 
 			#controller a .fa-sort-up, #controller a .fa-sort-down {
 				font-size: 2rem;
-				/* top: 50%; */
 				height: 20px;
-				/* margin-top: -10px; */
 			}
 
 			/* #controller a .fa-sort-up { */
@@ -2148,9 +2146,9 @@ input, select, textarea {
 				color: rgba(0, 255, 255, 0.75);
 			}
 
-/* 			.targetUp { */
-/* 				background-color: brown; */
-/* 			} */
+			.targetUp {
+				background-color: brown;
+			}
 
 			.targetDown {
 				/* font-size: 2rem; */

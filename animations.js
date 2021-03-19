@@ -1,8 +1,6 @@
 // Particles
 
-particlesJS.load('particles-js', 'particles.json', function () {
-    console.log('particles.json loaded!');
-});
+particlesJS.load('particles-js', 'particles.json');
 
 
 // GSAP
@@ -28,89 +26,168 @@ const contents2 = gsap.utils.toArray('.content2');
 const contents3 = gsap.utils.toArray('.content3');
 const contents4 = gsap.utils.toArray('.content4');
 const contents5 = gsap.utils.toArray('.content5');
-// const sections = gsap.utils.toArray('.snap-section');
-const section = document.querySelector('.section1');
+const sections = gsap.utils.toArray('.snap-section');
+// const section = document.querySelector('.section1');
 
 document.querySelector("#smooth").addEventListener("click", function () {
-    gsap.to(window, {duration: 1, scrollTo: ".section1"});
+    gsap.to(window, {duration: 1.5, ease: "back", scrollTo: ".section1"});
 });
 
 document.querySelector("#home").addEventListener("click", function () {
     gsap.to(window, {duration: 1.5, scrollTo: 0});
 });
 
-// document.querySelector("#up").addEventListener("click", function () {
-//     gsap.to(window, {duration: 1.5, scrollTo: ".targetUp"});
-// });
+document.querySelector("#up").addEventListener("click", function () {
+    const up = document.querySelectorAll('.targetUp');
+    if (up.length > 0) {
+        gsap.to(window, {duration: 1.5, ease: "back", scrollTo: ".targetUp"});
+    }
+});
 
 document.querySelector("#down").addEventListener("click", function () {
-    // e.preventDefault();
-    // gsap.to(window, {duration: 2, scrollTo: "#projects"});
-    // const section = document.querySelector(link.getAttribute("href"));
-    // return window.scrollTo("#projects"));
-    // gsap.to(window, 1, {scrollTo: section});
-    gsap.to(window, {duration: 1.5, scrollTo: ".targetDown"});
+    const down = document.querySelectorAll('.targetDown');
+    if (down.length > 0) {
+        gsap.to(window, {duration: 1.5, ease: "back", scrollTo: ".targetDown"});
+    }
 });
 
 // function changeClass() {
 //     j}
 
+// let n = 0;
 // sections.forEach(section => {
-// n += 1;
-// switch (n) {
+//     n += 1;
+//     switch (n) {
 
-// case 1:
-//     targetUp = "";
-//     targetDown = document.querySelector(".section2")
-//     break;
+//         case 1:
+//             // targetUp = document.querySelector("#wrapper")
+//             targetDown = document.querySelector(".section1")
+//             break;
 
-// case 2:
-//     targetUp = document.querySelector(".section1")
-//     targetDown = document.querySelector(".section3")
-//     break;
+//         case 2:
+//             // targetUp = document.querySelector(".section1")
+//             targetDown = document.querySelector(".section2")
+//             break;
 
-// case 3:
-//     targetUp = document.querySelector(".section2")
-//     targetDown = document.querySelector(".section4")
-//     break;
+//         case 3:
+//             // targetUp = document.querySelector(".section2")
+//             targetDown = document.querySelector(".section3")
+//             break;
 
-// case 4:
-//     targetUp = document.querySelector(".section3")
-//     targetDown = document.querySelector(".section5")
-//     break;
+//         case 4:
+//             // targetUp = document.querySelector(".section3")
+//             targetDown = document.querySelector(".section4")
+//             break;
 
-// case 5:
-//     targetUp = document.querySelector(".section4")
-//     targetDown = "";
-//     break;
-// }
-// gsap.from(container, {
-//     css: {
-//         height: 0,
-//         opacity: 0,
-//     },
+//         case 5:
+//             // targetUp = document.querySelector(".section4")
+//             targetDown = document.querySelector(".section1")
+//             break;
+//     }
 
-scrollTrigger.create({
-    start: "top top",
-    end: "bottom bottom",
+ScrollTrigger.create({
+    start: "top center",
+    end: "bottom center",
     trigger: ".section1",
-    markers: true,
     onEnter: () => {
-        // document.querySelector(".section1").className += 'targetDown';
-        window.alert("ok");
+        // sections[-1].classList.add('targetUp');
+        sections[1].classList.add('targetDown');
+    },
+    onLeave: () => {
+        // sections[-1].classList.remove('targetUp');
+        sections[1].classList.remove('targetDown');
+    },
+    onEnterBack: () => {
+        // sections[-1].classList.add('targetUp');
+        sections[1].classList.add('targetDown');
+    },
+    onLeaveBack: () => {
+        // sections[-1].classList.remove('targetUp');
+        sections[1].classList.remove('targetDown');
+    }
+});
+
+
+ScrollTrigger.create({
+    start: "top center",
+    end: "bottom center",
+    trigger: ".section2",
+    onEnter: () => {
+        sections[0].classList.add('targetUp');
+        sections[2].classList.add('targetDown');
+    },
+    onLeave: () => {
+        sections[0].classList.remove('targetUp');
+        sections[2].classList.remove('targetDown');
+    },
+    onEnterBack: () => {
+        sections[0].classList.add('targetUp');
+        sections[2].classList.add('targetDown');
+    },
+    onLeaveBack: () => {
+        sections[0].classList.remove('targetUp');
+        sections[2].classList.remove('targetDown');
+    }
+});
+
+
+ScrollTrigger.create({
+    start: "top center",
+    end: "bottom center",
+    trigger: ".section3",
+    onEnter: () => {
+        sections[1].classList.add('targetUp');
+        sections[3].classList.add('targetDown');
+    },
+    onLeave: () => {
+        sections[1].classList.remove('targetUp');
+        sections[3].classList.remove('targetDown');
+    },
+    onEnterBack: () => {
+        sections[1].classList.add('targetUp');
+        sections[3].classList.add('targetDown');
+    },
+    onLeaveBack: () => {
+        sections[1].classList.remove('targetUp');
+        sections[3].classList.remove('targetDown');
     }
 });
 
 ScrollTrigger.create({
-    trigger: ".section1",
-    start: "top top",
-    // endTrigger: "#otherID",
-    end: "bottom 50%+=100px",
-    onToggle: self => console.log("toggled, isActive:", self.isActive),
-    onUpdate: self => {
-        console.log("progress:", self.progress.toFixed(3), "direction:", self.direction, "velocity", self.getVelocity());
+    start: "top center",
+    end: "bottom center",
+    trigger: ".section4",
+    onEnter: () => {
+        sections[2].classList.add('targetUp');
+        sections[4].classList.add('targetDown');
+    },
+    onLeave: () => {
+        sections[2].classList.remove('targetUp');
+        sections[4].classList.remove('targetDown');
+    },
+    onEnterBack: () => {
+        sections[2].classList.add('targetUp');
+        sections[4].classList.add('targetDown');
+    },
+    onLeaveBack: () => {
+        sections[2].classList.remove('targetUp');
+        sections[4].classList.remove('targetDown');
     }
 });
+
+ScrollTrigger.create({
+    start: "top center",
+    end: "bottom center",
+    trigger: ".section5",
+    onEnter: () => {
+        sections[3].classList.add('targetUp');
+        gsap.to("#down", {duration: 1, opacity: 0, scrollTo: {x: "-=200"}});
+    },
+    onLeaveBack: () => {
+        sections[3].classList.remove('targetUp');
+    }
+});
+
 
 let n = 0;
 let i = 0;
@@ -170,9 +247,10 @@ containers.forEach(container => {
             x: origin,
             opacity: 0,
             scrollTrigger: {
-                start: "top center",
-                end: "top center",
+                start: "top center -=500px",
+                end: "+=500px",
                 trigger: container,
+                markers: true,
                 scrub: 2,
                 toggleActions: "restart pause reverse pause",
                 duration: 2
