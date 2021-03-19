@@ -30,7 +30,7 @@ const sections = gsap.utils.toArray('.snap-section');
 // const section = document.querySelector('.section1');
 
 document.querySelector("#smooth").addEventListener("click", function () {
-    gsap.to(window, {duration: 1.5, ease: "back", scrollTo: ".section1"});
+    gsap.to(window, {duration: 2.5, ease: "elastic", scrollTo: ".section1"});
 });
 
 document.querySelector("#home").addEventListener("click", function () {
@@ -47,7 +47,7 @@ document.querySelector("#up").addEventListener("click", function () {
 document.querySelector("#down").addEventListener("click", function () {
     const down = document.querySelectorAll('.targetDown');
     if (down.length > 0) {
-        gsap.to(window, {duration: 1.5, ease: "back", scrollTo: ".targetDown"});
+        gsap.to(window, {duration: 2, ease: "sine", scrollTo: ".targetDown"});
     }
 });
 
@@ -247,8 +247,8 @@ containers.forEach(container => {
             x: origin,
             opacity: 0,
             scrollTrigger: {
-                start: "top center -=500px",
-                end: "+=500px",
+                start: "top center+=100px",
+                end: "+=100px",
                 trigger: container,
                 markers: true,
                 scrub: 2,
