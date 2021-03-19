@@ -7,17 +7,6 @@ particlesJS.load('particles-js', 'particles.json');
 
 gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 
-// CustomEase.create("custom", "M0,0 C0.47,0.622 0.579,1.065 0.676,1.066 0.714,1.066 0.84,0.966 0.888,0.966 0.962,0.966 0.971,1 1,1 ");
-// CustomEase.create("hop", "M0,0.005 C0,0.005 0.056,0.445 0.175,0.445 0.294,0.445 0.332,0 0.332,0 0.332,0 0.414,1 0.671,1 0.991,1 1,0 1,0");
-
-// gsap.set("#controller", {scale: 1, x: 50});
-// gsap.timeline()
-
-
-// gsap.to("#controller li", {opacity: 0});
-// let tweenUp = gsap.fromTo("#up", {opacity: 0}, {opacity: 1, duration: 0.5});
-// let tweenDown = gsap.fromTo("#down", {opacity: 0}, {opacity: 1, duration: 0.5});
-
 ScrollTrigger.create({
     trigger: "body",
     pin: "#particles-js",
@@ -65,23 +54,16 @@ ScrollTrigger.create({
     end: "bottom center",
     trigger: ".section1",
     onEnter: () => {
-        // sections[-1].classList.add('targetUp');
         sections[1].classList.add('targetDown');
-        // tweenDown.reverse();
-        // tweenControllers.play();
     },
     onLeave: () => {
-        // sections[-1].classList.remove('targetUp');
         sections[1].classList.remove('targetDown');
     },
     onEnterBack: () => {
-        // sections[-1].classList.add('targetUp');
         sections[1].classList.add('targetDown');
     },
     onLeaveBack: () => {
-        // sections[-1].classList.remove('targetUp');
         sections[1].classList.remove('targetDown');
-        // tweenControllers.reverse();
     }
 });
 
@@ -159,16 +141,12 @@ ScrollTrigger.create({
     trigger: ".section5",
     onEnter: () => {
         sections[3].classList.add('targetUp');
-        // tweenDown.play();
     },
     onLeaveBack: () => {
         sections[3].classList.remove('targetUp');
-        // tweenDown.reverse();
     }
 });
 
-// let tweenDown = gsap.to("#down", {opacity: 0});
-// let tweenControllers = gsap.fromTo("#controller li", {scale: 0, x: 50}, {opacity: 1, scale: 1, x: 0, duration: 0.4, stagger: 0.2, ease: "back"});
 
 gsap.from("#controller li", {
     x: 50,
@@ -200,8 +178,6 @@ gsap.to("#down", {
         // scrub: 1,
         toggleActions: "play none reverse none",
         duration: 0.4,
-        // toggleClass: {targets: targetUp, className: "targetUp"},
-        // toggleClass: {targets: targetDown, className: "targetDown"}
     }
 })
 
@@ -234,11 +210,6 @@ containers.forEach(container => {
             contents = gsap.utils.toArray('.content5');
             break;
     }
-    // if (n % 2 === 0) {
-    //     origin = -500;
-    // } else {
-    //     origin = 500;
-    // };
     gsap.from(container, {
         css: {
             height: 0,
@@ -292,37 +263,14 @@ titles.forEach(title => {
             scrub: 0.1,
             toggleActions: "restart pause reverse pause",
             duration: 2,
-            // toggleClass: {targets: targetUp, className: "targetUp"},
-            // toggleClass: {targets: targetDown, className: "targetDown"}
         }
     })
 });
 
-// titles.forEach(title => {
-//     n += 1;
-//     if (n % 2 === 0) {
-//         origin = -700;
-//     } else {
-//         origin = 700;
-//     };
-//     gsap.from(title, {
-//         x: origin,
-//         opacity: 0,
-//         scrollTrigger: {
-//             start: "50%-=800px",
-//             end: "top center",
-//             trigger: title,
-//             scrub: 0.1,
-//             toggleActions: "play reverse play reverse",
-//             duration: 2
-//         }
-//     })
-// });
-
 ScrollTrigger.create({
     snap: {
         snapTo: 1 / 5,
-        duration: 1,
-        ease: "sine"
+        duration: 3,
+        ease: "elastic"
     }
 });

@@ -392,6 +392,10 @@ input, select, textarea {
 	/* 	font-weight: 600; */
 	/* } */
 
+	nav ul li a {
+		background-color: rgba(1, 21, 28, 0.4);
+	}
+
 	nav ul li a:hover {
 		background-color: rgba(70, 70, 70, 0.075);
 	}
@@ -1476,6 +1480,7 @@ input, select, textarea {
 			line-height: 5.5rem;
 			border: solid 1px #ffffff;
 			border-radius: 100%;
+			background-color: rgba(1, 21, 28, 0.4);
 			/* TODO check if is in the center */
 			right: 0.25%;
 			margin: 0;
@@ -1494,7 +1499,7 @@ input, select, textarea {
 		}
 
 			#header .content .inner {
-				background-color: rgba(1, 21, 28, 0.2);
+				background-color: rgba(1, 21, 28, 0.4);
 				-moz-transition: max-height 0.75s ease, padding 0.75s ease, opacity 0.325s ease-in-out;
 				-webkit-transition: max-height 0.75s ease, padding 0.75s ease, opacity 0.325s ease-in-out;
 				-ms-transition: max-height 0.75s ease, padding 0.75s ease, opacity 0.325s ease-in-out;
