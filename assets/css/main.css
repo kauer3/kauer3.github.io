@@ -2107,14 +2107,14 @@ input, select, textarea {
 
 		}
 
-/* Footer */
+/* Controller */
 
 			#controller {
 				/* width: 95%; */
 				list-style-type: none;
 				position: absolute;
-				bottom:20px;
-				right:2rem;
+				bottom: 20px;
+				right: 2rem;
 				/* padding: 6% 3% 6% 3% ; */
 			}
 
@@ -2125,7 +2125,6 @@ input, select, textarea {
 
 			#controller a .fa-sort-up, #controller a .fa-sort-down {
 				font-size: 2rem;
-				height: 20px;
 			}
 
 			/* #controller a .fa-sort-up { */
@@ -2142,16 +2141,20 @@ input, select, textarea {
 			/* } */
 
 			#controller a i:hover {
-				/* font-size: 2rem; */
+				font-size: 2.1rem;
 				color: rgba(0, 255, 255, 0.75);
 			}
 
-			.targetUp {
-				background-color: brown;
+			#controller #home i:hover {
+				font-size: 1.3rem;
 			}
 
-			.targetDown {
-				/* font-size: 2rem; */
-				background-color: yellow;
-			}
+/* 			.targetUp { */
+/* 				background-color: brown; */
+/* 			} */
+
+/* 			.targetDown { */
+/* 				/1* font-size: 2rem; *1/ */
+/* 				background-color: yellow; */
+/* 			} */
 

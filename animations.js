@@ -7,17 +7,28 @@ particlesJS.load('particles-js', 'particles.json');
 
 gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 
+// CustomEase.create("custom", "M0,0 C0.47,0.622 0.579,1.065 0.676,1.066 0.714,1.066 0.84,0.966 0.888,0.966 0.962,0.966 0.971,1 1,1 ");
+// CustomEase.create("hop", "M0,0.005 C0,0.005 0.056,0.445 0.175,0.445 0.294,0.445 0.332,0 0.332,0 0.332,0 0.414,1 0.671,1 0.991,1 1,0 1,0");
+
+// gsap.set("#controller", {scale: 1, x: 50});
+// gsap.timeline()
+
+
+// gsap.to("#controller li", {opacity: 0});
+// let tweenUp = gsap.fromTo("#up", {opacity: 0}, {opacity: 1, duration: 0.5});
+// let tweenDown = gsap.fromTo("#down", {opacity: 0}, {opacity: 1, duration: 0.5});
+
 ScrollTrigger.create({
     trigger: "body",
     pin: "#particles-js",
     pinSpacing: false
-})
+});
 
 ScrollTrigger.create({
     trigger: "body",
     pin: "#controller",
     pinSpacing: false
-})
+});
 
 const containers = gsap.utils.toArray('.container');
 const titles = gsap.utils.toArray('.project-title');
@@ -29,61 +40,25 @@ const contents5 = gsap.utils.toArray('.content5');
 const sections = gsap.utils.toArray('.snap-section');
 // const section = document.querySelector('.section1');
 
-document.querySelector("#smooth").addEventListener("click", function () {
-    gsap.to(window, {duration: 2.5, ease: "elastic", scrollTo: ".section1"});
+document.querySelector("#work").addEventListener("click", function () {
+    gsap.to(window, {duration: 2, ease: "power4.inOut", scrollTo: ".section1"});
 });
 
 document.querySelector("#home").addEventListener("click", function () {
-    gsap.to(window, {duration: 1.5, scrollTo: 0});
+    gsap.to(window, {duration: 2, ease: "power1.inOut", scrollTo: 0});
 });
 
 document.querySelector("#up").addEventListener("click", function () {
-    const up = document.querySelectorAll('.targetUp');
-    if (up.length > 0) {
-        gsap.to(window, {duration: 1.5, ease: "back", scrollTo: ".targetUp"});
-    }
+    // const up = document.querySelectorAll('.targetUp');
+    gsap.to(window, {duration: 1, ease: "power1.inOut", scrollTo: ".targetUp"});
 });
 
 document.querySelector("#down").addEventListener("click", function () {
     const down = document.querySelectorAll('.targetDown');
     if (down.length > 0) {
-        gsap.to(window, {duration: 2, ease: "sine", scrollTo: ".targetDown"});
+        gsap.to(window, {duration: 2, ease: "back", scrollTo: ".targetDown"});
     }
 });
-
-// function changeClass() {
-//     j}
-
-// let n = 0;
-// sections.forEach(section => {
-//     n += 1;
-//     switch (n) {
-
-//         case 1:
-//             // targetUp = document.querySelector("#wrapper")
-//             targetDown = document.querySelector(".section1")
-//             break;
-
-//         case 2:
-//             // targetUp = document.querySelector(".section1")
-//             targetDown = document.querySelector(".section2")
-//             break;
-
-//         case 3:
-//             // targetUp = document.querySelector(".section2")
-//             targetDown = document.querySelector(".section3")
-//             break;
-
-//         case 4:
-//             // targetUp = document.querySelector(".section3")
-//             targetDown = document.querySelector(".section4")
-//             break;
-
-//         case 5:
-//             // targetUp = document.querySelector(".section4")
-//             targetDown = document.querySelector(".section1")
-//             break;
-//     }
 
 ScrollTrigger.create({
     start: "top center",
@@ -92,6 +67,8 @@ ScrollTrigger.create({
     onEnter: () => {
         // sections[-1].classList.add('targetUp');
         sections[1].classList.add('targetDown');
+        // tweenDown.reverse();
+        // tweenControllers.play();
     },
     onLeave: () => {
         // sections[-1].classList.remove('targetUp');
@@ -104,6 +81,7 @@ ScrollTrigger.create({
     onLeaveBack: () => {
         // sections[-1].classList.remove('targetUp');
         sections[1].classList.remove('targetDown');
+        // tweenControllers.reverse();
     }
 });
 
@@ -179,14 +157,54 @@ ScrollTrigger.create({
     start: "top center",
     end: "bottom center",
     trigger: ".section5",
+    markers: true,
     onEnter: () => {
         sections[3].classList.add('targetUp');
-        gsap.to("#down", {duration: 1, opacity: 0, scrollTo: {x: "-=200"}});
+        // tweenDown.play();
     },
     onLeaveBack: () => {
         sections[3].classList.remove('targetUp');
+        // tweenDown.reverse();
     }
 });
+
+// let tweenDown = gsap.to("#down", {opacity: 0});
+// let tweenControllers = gsap.fromTo("#controller li", {scale: 0, x: 50}, {opacity: 1, scale: 1, x: 0, duration: 0.4, stagger: 0.2, ease: "back"});
+
+gsap.from("#controller li", {
+    x: 50,
+    opacity: 0,
+    scale: 0,
+    stagger: 0.1,
+    ease: "back",
+    scrollTrigger: {
+        start: "top center",
+        end: "top center",
+        trigger: ".section1",
+        // scrub: 1,
+        toggleActions: "play none reverse none",
+        duration: 1,
+        // toggleClass: {targets: targetUp, className: "targetUp"},
+        // toggleClass: {targets: targetDown, className: "targetDown"}
+    }
+})
+
+gsap.to("#down", {
+    x: 50,
+    opacity: 0,
+    scale: 0,
+    ease: "back",
+    scrollTrigger: {
+        start: "top center",
+        end: "top center",
+        trigger: ".section5",
+        // scrub: 1,
+        toggleActions: "play none reverse none",
+        duration: 0.4,
+        // toggleClass: {targets: targetUp, className: "targetUp"},
+        // toggleClass: {targets: targetDown, className: "targetDown"}
+    }
+})
 
 
 let n = 0;
@@ -250,7 +268,6 @@ containers.forEach(container => {
                 start: "top center+=100px",
                 end: "+=100px",
                 trigger: container,
-                markers: true,
                 scrub: 2,
                 toggleActions: "restart pause reverse pause",
                 duration: 2
