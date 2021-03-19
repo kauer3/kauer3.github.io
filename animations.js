@@ -90,15 +90,16 @@ document.querySelector("#down").addEventListener("click", function () {
 //         opacity: 0,
 //     },
 
-// scrollTrigger.create({
-//     start: "top top",
-//     end: "bottom bottom",
-//     trigger: ".section1",
-//     markers: true,
-//     onEnter: () => {
-//         document.querySelector(".section1").className += 'targetDown';
-//     }
-// });
+scrollTrigger.create({
+    start: "top top",
+    end: "bottom bottom",
+    trigger: ".section1",
+    markers: true,
+    onEnter: () => {
+        // document.querySelector(".section1").className += 'targetDown';
+        window.alert("ok");
+    }
+});
 
 
 
