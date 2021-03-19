@@ -393,8 +393,6 @@ input, select, textarea {
 	/* } */
 
 	nav ul li a:hover {
-		color: #00dddd;
-		font-weight: 600;
 		background-color: rgba(70, 70, 70, 0.075);
 	}
 
@@ -719,6 +717,7 @@ input, select, textarea {
 /* Icon */
 
 	.icon {
+
 		text-decoration: none;
 		border-bottom: none;
 		margin-top: 30%;
@@ -894,7 +893,7 @@ input, select, textarea {
 
 /* Actions */
 
-	ul.actions {
+	form ul.actions {
 		display: -moz-flex;
 		display: -webkit-flex;
 		display: -ms-flex;
@@ -908,18 +907,18 @@ input, select, textarea {
 		position: absolute;
 	}
 
-		ul.actions li {
+		form ul.actions li {
 			padding: 0 0 0 1rem;
 			width: 100%;
 			vertical-align: middle;
 		}
 
-		ul.actions input {
+		form ul.actions input {
 			width: calc(50% - 2.70rem);
 			cursor: url(/images/cursorp.png), auto;
 		}
 
-		ul.actions.special {
+		form ul.actions.special {
 			-moz-justify-content: center;
 			-webkit-justify-content: center;
 			-ms-justify-content: center;
@@ -928,11 +927,11 @@ input, select, textarea {
 			margin-left: 0;
 		}
 
-		ul.actions.special li:first-child {
+		form ul.actions.special li:first-child {
 			padding-left: 0;
 		}
 
-		ul.actions.stacked {
+		form ul.actions.stacked {
 			-moz-flex-direction: column;
 			-webkit-flex-direction: column;
 			-ms-flex-direction: column;
@@ -940,19 +939,19 @@ input, select, textarea {
 			margin-left: 0;
 		}
 
-		ul.actions.stacked li {
+		form ul.actions.stacked li {
 			padding: 1.3rem 0 0 0;
 		}
 
-		ul.actions.stacked li:first-child {
+		form ul.actions.stacked li:first-child {
 			padding-top: 0;
 		}
 
-		ul.actions.fit {
+		form ul.actions.fit {
 			width: calc(100% + 1rem);
 		}
 
-		ul.actions.fit li {
+		form ul.actions.fit li {
 			-moz-flex-grow: 1;
 			-webkit-flex-grow: 1;
 			-ms-flex-grow: 1;
@@ -964,17 +963,17 @@ input, select, textarea {
 			width: 100%;
 		}
 
-		ul.actions.fit li > * {
+		form ul.actions.fit li > * {
 			width: 100%;
 		}
 
-		ul.actions.fit.stacked {
+		form ul.actions.fit.stacked {
 			width: 100%;
 		}
 
 		@media screen and (max-width: 736px) {
 
-			ul.actions input {
+			form ul.actions input {
 				width: calc(50% - 2.30rem);
 			}
 
@@ -982,7 +981,7 @@ input, select, textarea {
 
 		@media screen and (max-width: 480px) {
 
-			ul.actions input {
+			form ul.actions input {
 				width: calc(50% - 0.5rem);
 			}
 
@@ -1020,7 +1019,6 @@ input, select, textarea {
 		/* 			} */
 
 		/* 			ul.actions:not(.fixed) li input[type="submit"], */
-		/* 			ul.actions:not(.fixed) li input[type="reset"], */
 		/* 			ul.actions:not(.fixed) li input[type="button"], */
 		/* 			ul.actions:not(.fixed) li button, */
 		/* 			ul.actions:not(.fixed) li .button { */
@@ -1028,7 +1026,6 @@ input, select, textarea {
 		/* 			} */
 
 		/* 				ul.actions:not(.fixed) li input[type="submit"].icon:before, */
-		/* 				ul.actions:not(.fixed) li input[type="reset"].icon:before, */
 		/* 				ul.actions:not(.fixed) li input[type="button"].icon:before, */
 		/* 				ul.actions:not(.fixed) li button.icon:before, */
 		/* 				ul.actions:not(.fixed) li .button.icon:before { */
@@ -1047,7 +1044,6 @@ input, select, textarea {
 	}
 
 		ul.icons li {
-			display: inline-block;
 			padding: 0 0 0 15%;
 			bottom: 33%;
 			position: relative;
@@ -1070,7 +1066,8 @@ input, select, textarea {
 			}
 
 				ul.icons li a:hover {
-					background-color: rgba(255, 255, 255, 0.075);
+					background-color: rgba(0, 255, 255, 0.075);
+					color: rgba(0, 255, 255, 0.75);
 				}
 
 				ul.icons li a:active {
@@ -1193,7 +1190,6 @@ input, select, textarea {
 /* Button */
 
 	input[type="submit"],
-	input[type="reset"],
 	input[type="button"],
 	button,
 	.button {
@@ -1226,7 +1222,6 @@ input, select, textarea {
 	}
 
 		input[type="submit"]:hover,
-		input[type="reset"]:hover,
 		input[type="button"]:hover,
 		button:hover,
 		.button:hover {
@@ -1234,7 +1229,6 @@ input, select, textarea {
 		}
 
 		input[type="submit"]:active,
-		input[type="reset"]:active,
 		input[type="button"]:active,
 		button:active,
 		.button:active {
@@ -1242,7 +1236,6 @@ input, select, textarea {
 		}
 
 		input[type="submit"].icon:before,
-		input[type="reset"].icon:before,
 		input[type="button"].icon:before,
 		button.icon:before,
 		.button.icon:before {
@@ -1250,7 +1243,6 @@ input, select, textarea {
 		}
 
 		input[type="submit"].fit,
-		input[type="reset"].fit,
 		input[type="button"].fit,
 		button.fit,
 		.button.fit {
@@ -1258,7 +1250,6 @@ input, select, textarea {
 		}
 
 		input[type="submit"].small,
-		input[type="reset"].small,
 		input[type="button"].small,
 		button.small,
 		.button.small {
@@ -1268,7 +1259,6 @@ input, select, textarea {
 		}
 
 		input[type="submit"].primary,
-		input[type="reset"].primary,
 		input[type="button"].primary,
 		button.primary,
 		.button.primary {
@@ -1278,8 +1268,6 @@ input, select, textarea {
 		}
 
 		input[type="submit"].disabled, input[type="submit"]:disabled,
-		input[type="reset"].disabled,
-		input[type="reset"]:disabled,
 		input[type="button"].disabled,
 		input[type="button"]:disabled,
 		button.disabled,
@@ -1292,7 +1280,6 @@ input, select, textarea {
 		}
 
 	input[type="submit"],
-	input[type="reset"],
 	input[type="button"],
 	button {
 		line-height: calc(2.75rem - 2px);
@@ -1489,6 +1476,9 @@ input, select, textarea {
 			line-height: 5.5rem;
 			border: solid 1px #ffffff;
 			border-radius: 100%;
+			/* TODO check if is in the center */
+			right: 0.25%;
+			margin: 0;
 		}
 
 			#header .logo .icon:before {
@@ -1524,8 +1514,8 @@ input, select, textarea {
 
 			#header .content p {
 				text-transform: uppercase;
-				letter-spacing: 0.6rem;
-				font-size: 0.9rem;
+				letter-spacing: 0.9rem;
+				font-size: 1rem;
 				line-height: 2;
 			}
 
@@ -1538,7 +1528,7 @@ input, select, textarea {
 			list-style: none;
 			padding-left: 0;
 			border: solid 1px #ffffff;
-			border-radius: 4px;
+			border-radius: 6px;
 		}
 
 			#header nav ul li {
@@ -1563,7 +1553,10 @@ input, select, textarea {
 				}
 
 					#header nav ul li a:hover {
-						background-color: rgba(0, 15, 15, 0.5);
+						background-color: rgba(0, 15, 15, 0.6);
+						font-weight: 600;
+						color: #00dddd;
+						letter-spacing: 0.22rem;
 					}
 
 					#header nav ul li a:active {
@@ -2113,3 +2106,54 @@ input, select, textarea {
 			}
 
 		}
+
+/* Footer */
+
+			#controller {
+				/* width: 95%; */
+				list-style-type: none;
+				position: absolute;
+				bottom:20px;
+				right:2rem;
+				/* padding: 6% 3% 6% 3% ; */
+			}
+
+			#controller a .fa-home {
+				font-size: 1.2rem;
+				margin-bottom: 30px;
+			}
+
+			#controller a .fa-sort-up, #controller a .fa-sort-down {
+				font-size: 2rem;
+				/* top: 50%; */
+				height: 20px;
+				/* margin-top: -10px; */
+			}
+
+			/* #controller a .fa-sort-up { */
+			/* 	font-size: 2rem; */
+			/* 	top: 50%; */
+			/* 	height: 20px; */
+			/* 	margin-top: 10px; */
+			/* } */
+
+			/* #controller a .fa-sort-down { */
+			/* 	font-size: 2rem; */
+			/* 	top: 50%; */
+			/* 	margin-bottom: 10px; */
+			/* } */
+
+			#controller a i:hover {
+				/* font-size: 2rem; */
+				color: rgba(0, 255, 255, 0.75);
+			}
+
+/* 			.targetUp { */
+/* 				background-color: brown; */
+/* 			} */
+
+			.targetDown {
+				/* font-size: 2rem; */
+				background-color: yellow;
+			}
+
