@@ -157,7 +157,6 @@ ScrollTrigger.create({
     start: "top center",
     end: "bottom center",
     trigger: ".section5",
-    markers: true,
     onEnter: () => {
         sections[3].classList.add('targetUp');
         // tweenDown.play();
