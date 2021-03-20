@@ -29,23 +29,23 @@ const contents5 = gsap.utils.toArray('.content5');
 const sections = gsap.utils.toArray('.snap-section');
 // const section = document.querySelector('.section1');
 
-document.querySelector("#work").addEventListener("click", function () {
-    gsap.to(window, {duration: 2, ease: "power4.inOut", scrollTo: ".section1"});
+document.querySelector("#portfolio").addEventListener("click", function () {
+    gsap.to(window, {duration: 1.8, ease: "power4.inOut", scrollTo: ".section1"});
 });
 
 document.querySelector("#home").addEventListener("click", function () {
-    gsap.to(window, {duration: 2, ease: "power1.inOut", scrollTo: 0});
+    gsap.to(window, {duration: 2.7, ease: "power1.inOut", scrollTo: 0});
 });
 
 document.querySelector("#up").addEventListener("click", function () {
     // const up = document.querySelectorAll('.targetUp');
-    gsap.to(window, {duration: 1, ease: "power1.inOut", scrollTo: ".targetUp"});
+    gsap.to(window, {duration: 1.8, ease: "back", scrollTo: ".targetUp"});
 });
 
 document.querySelector("#down").addEventListener("click", function () {
     const down = document.querySelectorAll('.targetDown');
     if (down.length > 0) {
-        gsap.to(window, {duration: 2, ease: "back", scrollTo: ".targetDown"});
+        gsap.to(window, {duration: 1.8, ease: "back", scrollTo: ".targetDown"});
     }
 });
 
@@ -154,15 +154,13 @@ gsap.from("#controller li", {
     scale: 0,
     stagger: 0.1,
     ease: "back",
+    // delay: 5,
     scrollTrigger: {
         start: "top center",
         end: "top center",
         trigger: ".section1",
-        // scrub: 1,
         toggleActions: "play none reverse none",
         duration: 1,
-        // toggleClass: {targets: targetUp, className: "targetUp"},
-        // toggleClass: {targets: targetDown, className: "targetDown"}
     }
 })
 
@@ -175,7 +173,6 @@ gsap.to("#down", {
         start: "top center",
         end: "top center",
         trigger: ".section5",
-        // scrub: 1,
         toggleActions: "play none reverse none",
         duration: 0.4,
     }
@@ -270,7 +267,7 @@ titles.forEach(title => {
 ScrollTrigger.create({
     snap: {
         snapTo: 1 / 5,
-        duration: 3,
+        duration: 5,
         ease: "elastic"
     }
 });
