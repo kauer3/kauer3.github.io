@@ -1,6 +1,10 @@
 @import url(fontawesome-all.min.css);
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300italic,600italic,300,600");
 
+* {
+	box-sizing: border-box;
+}
+
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
@@ -54,8 +58,7 @@ body {
 	color: transparent;
 }
 
-::-webkit-scrollbar-thumb
-{
+::-webkit-scrollbar-thumb {
   border-radius: 100%;
   background-color: transparent;
   background-image: -webkit-linear-gradient(90deg,
@@ -1351,7 +1354,7 @@ input, select, textarea {
 		-ms-justify-content: space-between;
 		justify-content: space-between;
 		position: relative;
-		min-height: 100vh;
+		height: 100vh;
 		width: 100%;
 		padding: 4rem 2rem;
 		z-index: 3;
@@ -1913,6 +1916,7 @@ input, select, textarea {
 		#projects .container {
 			margin: 0;
 			top: 45.5%;
+			/* top: 50%; */
 			left: 50%;
 			-ms-transform: translate(-50%, -50%);
 			transform: translate(-50%, -50%);
@@ -1929,10 +1933,11 @@ input, select, textarea {
 		}
 
 		#projects .snap-section {
-			padding: 4.5rem 2.5rem 1.5rem 2.5rem;
+			/* padding: 4.5rem 2.5rem 1.5rem 2.5rem; */
 			position: relative;
 			width: 100%;
 			height: 100vh;
+			/* height: 85vh; */
 		}
 
 		#projects .project {
@@ -2063,8 +2068,8 @@ input, select, textarea {
 		@media screen and (max-width: 480px) {
 
 			#projects .container {
-				width: 95%;
-				top: 40%;
+				/* width: 95%; */
+				/* top: 40%; */
 				padding: 6% 3% 6% 3% ;
 			}
 
@@ -2073,7 +2078,7 @@ input, select, textarea {
 		@media screen and (max-width: 360px) {
 
 			#projects .container {
-				top: 47%;
+				/* top: 47%; */
 			}
 
 		}
@@ -2108,3 +2113,11 @@ input, select, textarea {
 			#controller #home i:hover {
 				font-size: 1.25rem;
 			}
+
+		@media screen and (max-width: 600px) {
+
+			#controller {
+				display: none;
+			}
+
+		}
