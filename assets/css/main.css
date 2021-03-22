@@ -2042,7 +2042,7 @@ input, select, textarea {
 
 			#first-project img {
 				opacity: 0;
-				width: 0px;
+				display: none;
 			}
 
 			#projects .project p {
@@ -2080,31 +2080,39 @@ input, select, textarea {
 
 /* Controller */
 
+		#controller {
+			list-style-type: none;
+			position: absolute;
+			bottom: 20px;
+			right: 2rem;
+		}
+
+		#controller a .fa-home {
+			font-size: 1.2rem;
+			margin-bottom: 30px;
+		}
+
+		#controller a .fa-sort-up, #controller a .fa-sort-down {
+			font-size: 2rem;
+		}
+
+		#controller a i {
+			cursor: url(/images/cursorp.png), auto;
+		}
+
+		#controller a i:hover {
+			font-size: 2.1rem;
+			color: rgba(0, 255, 255, 0.75);
+		}
+
+		#controller #home i:hover {
+			font-size: 1.25rem;
+		}
+
+		@media screen and (max-width: 480px) {
+
 			#controller {
-				list-style-type: none;
-				position: absolute;
-				bottom: 20px;
-				right: 2rem;
+				display: none;
 			}
 
-			#controller a .fa-home {
-				font-size: 1.2rem;
-				margin-bottom: 30px;
-			}
-
-			#controller a .fa-sort-up, #controller a .fa-sort-down {
-				font-size: 2rem;
-			}
-
-			#controller a i {
-				cursor: url(/images/cursorp.png), auto;
-			}
-
-			#controller a i:hover {
-				font-size: 2.1rem;
-				color: rgba(0, 255, 255, 0.75);
-			}
-
-			#controller #home i:hover {
-				font-size: 1.25rem;
-			}
+		}
