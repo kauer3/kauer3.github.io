@@ -1,10 +1,6 @@
 @import url(fontawesome-all.min.css);
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300italic,600italic,300,600");
 
-* {
-  box-sizing: border-box;
-}
-
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
@@ -35,16 +31,6 @@ html, body {
 	max-width: 100%;
 	cursor: url(/images/cursor.png), auto;
 }
-
-/* @media screen and (max-width: 600px) { */
-
-/* 	html, body { */
-/* 		height: 600vh; */
-/* 		/1* max-width: 100%; *1/ */
-/* 		/1* cursor: url(/images/cursor.png), auto; *1/ */
-/* 	} */
-
-/* } */
 
 body {
 	line-height: 1;
@@ -1946,8 +1932,7 @@ input, select, textarea {
 			padding: 4.5rem 2.5rem 1.5rem 2.5rem;
 			position: relative;
 			width: 100%;
-			/* height: 100vh; */
-			height: 97vh;
+			height: 100vh;
 		}
 
 		#projects .project {
@@ -2124,7 +2109,7 @@ input, select, textarea {
 			font-size: 1.25rem;
 		}
 
-		@media screen and (max-width: 600px) {
+		@media screen and (max-width: 480px) {
 
 			#controller {
 				display: none;
