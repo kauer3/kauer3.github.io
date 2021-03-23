@@ -1815,72 +1815,98 @@ input, select, textarea {
 
 /* Skills */
 
+		#skills table {
+			/* text-align: center; */
+			/* width: 400px; */
+			/* letter-spacing: ;rem 0.5rem 0rem ; */
+			/* border: collapse; */
+			font-size: 0.7em;
+		}
+
 		#skills td {
-			/* width: 1.5rem; */
 			text-align: center;
-			/* padding-left: 1rem; */
-			/* padding-right: 1rem; */
-			/* padding-bottom: 3vh; */
+			width: 0.1rem;
+			padding: 2rem 0rem 0.5rem 0rem ;
+			/* border: collapse; */
 		}
 
 		#skills img {
 			width: 1.5rem;
-			/* height: 70.5vh; */
-			/* padding-left: 1rem; */
-			/* padding-right: 1rem; */
-			/* padding-bottom: 3vh; */
 		}
+
+		#skills .display {
+			display: none;
+		}
+
+		@media screen and (max-width: 600) {
+
+			#skills .hide {
+				display: none;
+			}
+
+			#skills .display {
+				display: inline;
+			}
+
+		}
+		/* tr { */
+		/* 	display: block; float: left; */
+		/* } */ 
+
+		/* td { */
+		/* 	display: block; */
+		/* } */
 
 /* Carousel */
 
 		.project {
-			/* width: %; */
-			/* height: 70.5vh; */
 			padding-left: 1rem;
 			padding-right: 1rem;
-			/* padding-bottom: 3vh; */
+			/* padding-bottom: 1rem; */
 		}
 
-		.control {
-			height: 70vh;
-			width: 4rem;
-			top: 0.5vh;
-			border-color: none;
-		}
+		/* .control { */
+		/* 	height: 70vh; */
+		/* 	width: 4rem; */
+		/* 	top: 0.5vh; */
+		/* 	border-color: none; */
+		/* } */
 
-		.carousel-control-prev {
-			left: -3.5rem;
-		}
+		/* .carousel-control-prev { */
+		/* 	left: -3.5rem; */
+		/* } */
 
-		.carousel-control-next {
-			right: -6.4rem;
-		}
+		/* .carousel-control-next { */
+		/* 	right: -6.4rem; */
+		/* } */
 
-		#carouselExampleCaptions {
-			/* height: 100%; */
-			bottom: -20px;
-			width: 95%;
-		}
+		/* #carouselExampleCaptions { */
+		/* 	/1* height: 100%; *1/ */
+		/* 	bottom: -20px; */
+		/* 	width: 95%; */
+		/* } */
 		
-		.carousel-item {
-			left: 50px;
-			height: 28rem;
-			width: 51rem;
-			/* z-index: 1000000; */
-		}
+		/* .carousel-item { */
+		/* 	left: 50px; */
+		/* 	height: 28rem; */
+		/* 	width: 51rem; */
+		/* 	/1* z-index: 1000000; *1/ */
+		/* } */
 
-		@media screen and (max-width: 480px) {
+		/* @media screen and (max-width: 480px) { */
 
-			button.control {
-				display: none;
-			}
+		/* 	button.control { */
+		/* 		display: none; */
+		/* 	} */
 
-			.carousel-item {
-				height: 39rem;
-				padding-left: 0px;
-			}
+		/* 	.carousel-item { */
+		/* 		height: 39rem; */
+		/* 		padding-left: 0px; */
+		/* 	} */
 
-		}
+		/* } */
+
+
 		/* .carousel-header { */
 		/* 	display: inline-block; */
 		/* 	white-space: nowrap; */
