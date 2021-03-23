@@ -1834,21 +1834,21 @@ input, select, textarea {
 			width: 1.5rem;
 		}
 
-		#skills .display {
-			display: none;
-		}
+		/* #skills .display { */
+		/* 	display: none; */
+		/* } */
 
-		@media screen and (max-width: 600) {
+		/* @media screen and (max-width: 600) { */
 
-			#skills .hide {
-				display: none;
-			}
+		/* 	#skills .hide { */
+		/* 		display: none; */
+		/* 	} */
 
-			#skills .display {
-				display: inline;
-			}
+		/* 	#skills .display { */
+		/* 		display: inline; */
+		/* 	} */
 
-		}
+		/* } */
 		/* tr { */
 		/* 	display: block; float: left; */
 		/* } */ 
