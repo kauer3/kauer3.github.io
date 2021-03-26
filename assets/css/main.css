@@ -82,7 +82,7 @@ body {
 }
 
 ::-webkit-scrollbar-track-piece:hover {
-	background:  rgba(0, 255, 255, 0.4);
+	background:  rgba(0, 255, 255, 0.1);
 	/* box-shadow: inset 0 1px 1px #00ffff; */ 
   border-radius: 100%;
 }
