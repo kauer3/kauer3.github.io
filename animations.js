@@ -27,7 +27,6 @@ const contents3 = gsap.utils.toArray('.content3');
 const contents4 = gsap.utils.toArray('.content4');
 const contents5 = gsap.utils.toArray('.content5');
 const sections = gsap.utils.toArray('.snap-section');
-// const section = document.querySelector('.section1');
 
 document.querySelector("#portfolio").addEventListener("click", function () {
     gsap.to(window, {duration: 1.8, ease: "power4.inOut", scrollTo: ".section1"});
@@ -154,7 +153,6 @@ gsap.from("#controller li", {
     scale: 0,
     stagger: 0.1,
     ease: "back",
-    // delay: 5,
     scrollTrigger: {
         start: "top center",
         end: "top center",
