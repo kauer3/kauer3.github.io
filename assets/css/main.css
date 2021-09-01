@@ -213,20 +213,20 @@ input, select, textarea {
 		cursor: url(/images/cursorp.png), auto;
 	}
 
-	#projects a {
+	a {
 		color: #00ffff;
 	}
 
-	#projects a:visited {
+	a:visited {
 		color: #33ffff;
 	}
 
-	#projects a:hover {
+	a:hover {
 		color: #00ccff;
 		font-weight: 500;
 	}
 
-	#projects a:active {
+	a:active {
 		border-bottom-color: #ff1100;
 		color: #0066ff;
 	}
@@ -1491,7 +1491,7 @@ input, select, textarea {
 
 			#header .content p {
 				text-transform: uppercase;
-				/* letter-spacing: 0.5rem; */
+				letter-spacing: 0.57rem;
 				font-size: 1rem;
 				line-height: 2;
 			}
