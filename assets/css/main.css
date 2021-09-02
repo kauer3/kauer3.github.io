@@ -1898,7 +1898,7 @@ body.is-preload #header .content .inner {
 
 #bee-project img {
 	float: right;
-	width: 30rem;
+	width: 25rem;
 	margin-left: 2%;
 	margin-top: 10px;
 }
@@ -1918,8 +1918,7 @@ body.is-preload #header .content .inner {
 	}
 
 	#bee-project img {
-		width: 25rem;
-		margin-left: 2%;
+		width: 20rem;
 	}
 
 }
