@@ -1076,24 +1076,7 @@ ul.icons li a:active {
 		top: -10px;
 	}
 
-	/* ul.icons li:last-child { */
-	/* 	margin-left: 0; */
-	/* } */
-
 }
-
-/* 	ul.actions { */
-/* 		width: 100%; */
-/* 	} */
-
-/* ul.icons { */
-/* 	list-style: none; */
-/* 	padding-left: 0; */
-/* 	float: left; */
-/* 	width: 100%; */
-/* 	margin-top: 3vh; */
-/* } */
-/* } */
 
 /* Table */
 
@@ -1120,6 +1103,12 @@ table tbody tr:nth-child(2n + 1) {
 table tr td {
 	text-align: center;
 	padding: 1em;
+	transition: ease-in-out 1s;
+}
+
+table tr td:hover {
+	transform: scale(1.2);
+	transition: ease-out .3s;
 }
 
 table tr th {
@@ -1128,6 +1117,7 @@ table tr th {
 	font-weight: 600;
 	padding: 1em;
 	text-align: center;
+	transform: translate(-8px); 
 }
 
 table td img {
@@ -1814,6 +1804,14 @@ body.is-preload #header .content .inner {
 		background-size: 14px 14px;
 	}
 
+	#skills .scrollable {
+		overflow-x: auto;
+	}
+
+	#skills .scrollable::-webkit-scrollbar-thumb {
+		border-radius: 50px;
+	}
+
 }
 
 @media screen and (max-width: 480px) {
@@ -1823,13 +1821,6 @@ body.is-preload #header .content .inner {
 	}
 
 }
-
-/* #skills table { */
-/* 	letter-spacing: 0.1rem; */
-/* 	font-size: 0.8em; */
-/* 	font-weight: bold; */
-/* } */
-
 /* #skills td { */
 /* 	text-align: center; */
 /* } */
@@ -1898,11 +1889,18 @@ body.is-preload #header .content .inner {
 	margin-top: -25px;
 }
 
-#second-project img {
+#pr-project img {
 	float: right;
 	margin-top: 4.7vh;
 	width: 30rem;
 	margin-left: 2%;
+}
+
+#bee-project img {
+	float: right;
+	width: 30rem;
+	margin-left: 2%;
+	margin-top: 10px;
 }
 
 @media screen and (max-width: 1292px) {
@@ -1915,8 +1913,13 @@ body.is-preload #header .content .inner {
 		margin-left: 5%;
 	}
 
-	#second-project img {
+	#pr-project img {
 		width: 44%;
+	}
+
+	#bee-project img {
+		width: 25rem;
+		margin-left: 2%;
 	}
 
 }
@@ -1933,7 +1936,7 @@ body.is-preload #header .content .inner {
 		margin-top: 2.8%;
 	}
 
-	#second-project img {
+	#pr-project img {
 		display: none;
 	}
 
@@ -1961,6 +1964,11 @@ body.is-preload #header .content .inner {
 	#first-project img {
 		width: 200px;
 		margin-top: 3%;
+	}
+
+	#bee-project img {
+		width: 20rem;
+		margin-left: 1%;
 	}
 
 }
