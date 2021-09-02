@@ -37,7 +37,6 @@ document.querySelector("#home").addEventListener("click", function () {
 });
 
 document.querySelector("#up").addEventListener("click", function () {
-    // const up = document.querySelectorAll('.targetUp');
     gsap.to(window, {duration: 1.8, ease: "back", scrollTo: ".targetUp"});
 });
 
@@ -140,9 +139,31 @@ ScrollTrigger.create({
     trigger: ".section5",
     onEnter: () => {
         sections[3].classList.add('targetUp');
+        sections[5].classList.add('targetDown');
+    },
+    onLeave: () => {
+        sections[3].classList.remove('targetUp');
+        sections[5].classList.remove('targetDown');
+    },
+    onEnterBack: () => {
+        sections[3].classList.add('targetUp');
+        sections[5].classList.add('targetDown');
     },
     onLeaveBack: () => {
         sections[3].classList.remove('targetUp');
+        sections[5].classList.remove('targetDown');
+    }
+});
+
+ScrollTrigger.create({
+    start: "top center",
+    end: "bottom center",
+    trigger: ".section6",
+    onEnter: () => {
+        sections[4].classList.add('targetUp');
+    },
+    onLeaveBack: () => {
+        sections[4].classList.remove('targetUp');
     }
 });
 
@@ -170,7 +191,7 @@ gsap.to("#down", {
     scrollTrigger: {
         start: "top center",
         end: "top center",
-        trigger: ".section5",
+        trigger: ".section6",
         toggleActions: "play none reverse none",
         duration: 0.4,
     }
@@ -264,7 +285,7 @@ titles.forEach(title => {
 
 ScrollTrigger.create({
     snap: {
-        snapTo: 1 / 5,
+        snapTo: 1 / 6,
         duration: 5,
         ease: "elastic"
     }

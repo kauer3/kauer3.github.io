@@ -31,7 +31,7 @@ footer, header, hgroup, menu, nav, section {
 }
 
 html, body {
-	height: 500vh;
+	height: 600vh;
 	max-width: 100%;
 	cursor: url(/images/cursor.png), auto;
 }
@@ -102,6 +102,9 @@ blockquote:before, blockquote:after, q:before, q:after {
 }
 
 table {
+	letter-spacing: 0.1rem;
+	font-size: 0.8em;
+	font-weight: bold;
 	border-collapse: collapse;
 	border-spacing: 0;
 }
@@ -206,7 +209,7 @@ a {
 	-moz-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
 	-webkit-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
 	-ms-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
-	transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
+	transition: ease-out 1s;
 	border-bottom: dotted 1px transparent;
 	text-decoration: none;
 	color: inherit;
@@ -224,6 +227,7 @@ a:visited {
 a:hover {
 	color: #00ccff;
 	font-weight: 500;
+	transition: ease-out .3s;
 }
 
 a:active {
@@ -1034,6 +1038,7 @@ ul.icons li a {
 	text-align: center;
 	width: 2.75rem;
 	top: -14px;
+	color: #fff;
 }
 
 ul.icons li a:hover {
@@ -1112,16 +1117,21 @@ table tbody tr:nth-child(2n + 1) {
 	background-color: rgba(255, 255, 255, 0.075);
 }
 
-table td {
-	padding: 0.75em 0.75em;
+table tr td {
+	text-align: center;
+	padding: 0.75em;
 }
 
-table th {
+table tr th {
 	color: #ffffff;
-	font-size: 0.9em;
+	font-size: 1.3em;
 	font-weight: 600;
-	padding: 0 0.75em 0.75em 0.75em;
-	text-align: left;
+	padding: 1em;
+	text-align: center;
+}
+
+table td img {
+	width: 1.5rem;
 }
 
 table thead {
@@ -1518,6 +1528,7 @@ body.is-preload .bg:before {
 }
 
 #header nav ul li a {
+	color: #fff;
 	display: block;
 	min-width: 7.5rem;
 	height: 2.75rem;
@@ -1813,123 +1824,18 @@ body.is-preload #header .content .inner {
 
 }
 
-/* Skills */
-
-#skills table {
-	letter-spacing: 0.1rem;
-	font-size: 0.8em;
-	font-weight: bold;
-}
-
-#skills td {
-	text-align: center;
-	width: 0.1rem;
-	padding: 2rem 0rem 0.5rem 0rem ;
-}
-
-#skills img {
-	width: 1.5rem;
-}
-
-/* Carousel */
-
-/* .project { */
-/* 	padding-left: 1rem; */
-/* 	padding-right: 1rem; */
-/* 	/1* padding-bottom: 1rem; *1/ */
+/* #skills table { */
+/* 	letter-spacing: 0.1rem; */
+/* 	font-size: 0.8em; */
+/* 	font-weight: bold; */
 /* } */
 
-/* 		.control { */
-/* 			height: 70vh; */
-/* 			width: 4rem; */
-/* 			top: 0.5vh; */
-/* 			border-color: none; */
-/* 		} */
+/* #skills td { */
+/* 	text-align: center; */
+/* } */
 
-/* 		.carousel-control-prev { */
-/* 			left: -3.5rem; */
-/* 		} */
-
-/* 		.carousel-control-next { */
-/* 			right: -6.4rem; */
-/* 		} */
-
-/* 		#carouselExampleCaptions { */
-/* 			/1* height: 100%; *1/ */
-/* 			/1* bottom: -20px; *1/ */
-/* 			top: 50%; */
-/* 			width: 95%; */
-/* 		} */
-
-/* 		/1* .carousel-item { *1/ */
-/* 		/1* 	left: 50px; *1/ */
-/* 		/1* 	height: 28rem; *1/ */
-/* 		/1* 	width: 51rem; *1/ */
-/* 		/1* 	/2* z-index: 1000000; *2/ *1/ */
-/* 		/1* } *1/ */
-
-/* 		@media screen and (max-width: 480px) { */
-
-/* 			button.control { */
-/* 				display: none; */
-/* 			} */
-
-/* 			.carousel-item { */
-/* 				height: 39rem; */
-/* 				padding-left: 0px; */
-/* 			} */
-
-/* 		} */
-
-
-/* 		.carousel-header { */
-/* 			display: inline-block; */
-/* 			white-space: nowrap; */
-/* 			top: -10px; */
-/* 		} */
-
-/* 		.carousel-title-1 { */
-/* 			display: inline-block; */
-/* 			top: -10px; */
-/* 			flex: right; */
-/* 		} */
-
-/* 		#slang { */
-/* 			poistion: absolute; */
-/* 			/1* display: block; *1/ */
-/* 			/1* margin: auto; *1/ */
-/* 		} */
-
-/* Footer */
-
-/* #projects { */
-/* 	-moz-flex-grow: 1; */
-/* 	-webkit-flex-grow: 1; */
-/* 	-ms-flex-grow: 1; */
-/* 	flex-grow: 1; */
-/* 	-moz-flex-shrink: 1; */
-/* 	-webkit-flex-shrink: 1; */
-/* 	-ms-flex-shrink: 1; */
-/* 	flex-shrink: 1; */
-/* 	display: -moz-flex; */
-/* 	display: -webkit-flex; */
-/* 	display: -ms-flex; */
-/* 	display: flex; */
-/* 	-moz-align-items: center; */
-/* 	-webkit-align-items: center; */
-/* 	-ms-align-items: center; */
-/* 	align-items: center; */
-/* 	-moz-justify-content: center; */
-/* 	-webkit-justify-content: center; */
-/* 	-ms-justify-content: center; */
-/* 	justify-content: center; */
-/* 	-moz-flex-direction: column; */
-/* 	-webkit-flex-direction: column; */
-/* 	-ms-flex-direction: column; */
-/* 	flex-direction: column; */
-/* 	position: relative; */
-/* 	width: 100%; */
-/* 	z-index: 3; */
+/* #skills img { */
+/* 	width: 1.5rem; */
 /* } */
 
 #projects .container {
@@ -2113,11 +2019,13 @@ body.is-preload #header .content .inner {
 
 #controller a i {
 	cursor: url(/images/cursorp.png), auto;
+	transition: ease-out: 0.8s;
 }
 
 #controller a i:hover {
 	font-size: 2.1rem;
 	color: rgba(0, 255, 255, 0.75);
+	transition: ease-out 0.3s;
 }
 
 #controller #home i:hover {
