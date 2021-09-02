@@ -68,65 +68,81 @@
 						<h2 class="major">Skills</h2>
 						<table style="width:100%">
 							<tr>
+								<th colspan="2">Front-End</th>
+								<th colspan="2">Back-End</th>
+								<th colspan="2">Others</th>
+							</tr>
 								<td>
 									<img src="images/javascript.png"></img><br>
 									Javascript
 								</td>
 								<td>
-									<img src="images/python.png"></img><br>
-									Python
+									<img src="images/javascript.png"></img><br>
+									React JS
 								</td>
+								<td>
+									<img src="images/python.png"></img><br>
+									Node.js
+								</td>
+							 	<td>
+									<img src="images/sql.png"></img><br>
+									SQL
+								</td>
+							 	<td class="hide">
+									<img src="images/git.png"></img><br>
+									Git
+								</td>
+								<td>
+									<img src="images/c.webp"></img><br>
+									C
+								</td>
+							</tr>
+							<tr>
 							 	<td class="hide">
 									<img src="images/html.png"></img><br>
 									HTML
 								</td>
 							 	<td class="hide">
 									<img src="images/css.png"></img><br>
-									CSS
+									Styled-Components
+								</td>
+								<td>
+									<img src="images/python.png"></img><br>
+									Adonis.JS
 								</td>
 							 	<td>
 									<img src="images/sql.png"></img><br>
-									SQL
-								</td>
-							</tr>
-							<tr>
-								<td>
-									<img src="images/c.webp"></img><br>
-									C
-								</td>
-								<td>
-									<img src="images/django.png"></img><br>
-									Django
-								</td>
-							 	<td class="hide">
-									<img src="images/git.png"></img><br>
-									Git
-								</td>
-								<td class="hide">
-									<img src="images/bootstrap.png"></img><br>
-									Bootstrap
-								</td>
-							 	<td>
-									<img src="images/sqlite.png"></img><br>
-									SQLite
-								</td>
-							</tr>
-							<tr>
-							 	<td>
-									<img src="images/vim.png"></img><br>
-									Vimscript
-								</td>
-								<td>
-									<img src="images/flask.png"></img><br>
-									Flask
+									PostgreSQL
 								</td>
 							 	<td class="hide">
 									<img src="images/github.png"></img><br>
 									GitHub
 								</td>
+							 	<td>
+									<img src="images/vim.png"></img><br>
+									Vimscript
+								</td>
+							</tr>
+							<tr>
+							 	<td class="hide">
+									<img src="images/css.png"></img><br>
+									CSS
+								</td>
 							 	<td class="hide">
 									<img src="images/sass.png"></img><br>
 									Sass
+								</td>
+								<td>
+									<img src="images/python.png"></img><br>
+									Python
+								</td>
+								<td>
+									<img src="images/django.png"></img><br>
+									Django
+								</td>
+								<td>
+									<img src="images/flask.png"></img><br>
+									Flask
 								</td>
 							 	<td>
 									<img src="images/linux.png"></img><br>
@@ -171,15 +187,15 @@
 							<div class="fields">
 								<div class="field half">
 									<label for="name">Name</label>
-									<input type="text" name="name" id="name" placeholder="Name"/>
+									<input type="text" name="name" id="name" placeholder="Name" required/>
 								</div>
 								<div class="field half">
 									<label for="email">Email</label>
-									<input type="email" name="email" id="email" placeholder="Email"/>
+									<input type="email" name="email" id="email" placeholder="Email" required/>
 								</div>
 								<div class="field">
 									<label for="message">Message</label>
-									<textarea name="message" id="message" rows="4" placeholder="Message"></textarea>
+									<textarea name="message" id="message" rows="4" placeholder="Message" required></textarea>
 								</div>
 							</div>
 							<ul class="actions">
@@ -187,7 +203,7 @@
 							</ul>
 						</form>
 						<ul class="icons">
-							<li><a href="https://linkedin.com/in/kauereisdeassispereira" target="_blank" rel="noopener noreferrer" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+							<li><a href="https://linkedin.com/in/kauer3" target="_blank" rel="noopener noreferrer" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
 							<li><a href="https://github.com/kauer3" target="_blank" rel="noopener noreferrer" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
 						</ul>
 					</article>
@@ -196,56 +212,6 @@
 
 			<!-- Projects -->
 			<div id="projects"> 
-				<!-- (Deactivated) Carousel -->
-				<!-- <div class="snap-section section1"> -->
-				<!-- 	<div class="container" id="container1"> -->
-				<!-- 		<article id="first-project" class="project"> -->
-				<!-- 			<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false"> -->
-				<!-- 				<div class="carousel-indicators"> -->
-				<!-- 					<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button> -->
-				<!-- 					<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button> -->
-				<!-- 					<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button> -->
-				<!-- 				</div> -->
-				<!-- 				<div class="carousel-inner"> -->
-				<!-- 					<div class="carousel-item active"> -->
-				<!-- 						<div class="carousel-header"> -->
-				<!-- 							<h2 class="carousel-title-1 test">Slang - Text to Speech</h2> -->
-				<!-- 						</div> -->
-				<!-- 						<p class="content1">This is my CS50x final project, a Chrome extension that converts text to speech. Just select any text on any website, open the pop-up and hit play, Slang will read it out loud for you.</p> -->
-				<!-- 						<p class="content1">Download at the <a href="https://chrome.google.com/webstore/detail/slang-text-to-speech/enkmbkhkbdiaafkmofbmdahclajelgfh">Chrome Web Store</a> and access the project's <a href="https://github.com/kauer3/Slang-Text-to-Speech">repository on GitHub</a></p> -->
-				<!-- 					</div> -->
-				<!-- 					<div class="carousel-item"> -->
-				<!-- 						<div class="carousel-header"> -->
-				<!-- 							<h2 class="carousel-title-1 test">Slang - Text to Speech</h2> -->
-				<!-- 						</div> -->
-				<!-- 						<div class="carousel-caption d-none d-md-block"> -->
-				<!-- 							<h5>Second slide label</h5> -->
-				<!-- 							<p class="content1">Some representative placeholder content1 for the second slide.</p> -->
-				<!-- 						</div> -->
-				<!-- 					</div> -->
-				<!-- 					<div class="carousel-item"> -->
-				<!-- 						<div class="carousel-header"> -->
-				<!-- 							<h2 class="carousel-title-1 test">Slang - Text to Speech</h2> -->
-				<!-- 						</div> -->
-				<!-- 						<div class="carousel-caption d-none d-md-block"> -->
-				<!-- 							<h5>Third slide label</h5> -->
-				<!-- 							<p class="content1">Some representative placeholder content1 for the third slide.</p> -->
-				<!-- 						</div> -->
-				<!-- 					</div> -->
-				<!-- 				</div> -->
-				<!-- 				<button class="carousel-control-prev control" type="button" data-bs-target="#carouselExampleCaptions"  data-bs-slide="prev"> -->
-				<!-- 					<span class="carousel-control-prev-icon" aria-hidden="true"></span> -->
-				<!-- 					<span class="visually-hidden">Previous</span> -->
-				<!-- 				</button> -->
-				<!-- 				<button class="carousel-control-next control" type="button" data-bs-target="#carouselExampleCaptions"  data-bs-slide="next"> -->
-				<!-- 					<span class="carousel-control-next-icon" aria-hidden="true"></span> -->
-				<!-- 					<span class="visually-hidden">Next</span> -->
-				<!-- 				</button> -->
-				<!-- 			</div> -->
-				<!-- 		</article> -->
-				<!-- 	</div> -->
-					
-
 				<!-- Project 1 -->
 				<div class="snap-section section1">
 					<div class="container" id="container1">
@@ -263,12 +229,10 @@
 				<div class="snap-section section2">
 					<div class="container" id="container2">
 						<article id="second-project" class="project">
-							<h2 class="project-title">Paste-Replace.vim</h2>
-							<p class="content2">This project is a plugin to the text editor <a href="https://www.vim.org/" target="_blank" rel="noopener noreferrer">Vim</a>, and was written in vimscript.</p>
-							<img src="images/paste-replace-example.gif"></img>
-							<p class="content2">Paste-Replace provides new operators to replace text objects with register contents in Vim, so you can replace text objects with another text you had copied in a single command. Aditionally, Paste-Replace also provides an operator to copy text to clipboard and some other mappings related to registers.</p>
-							<p class="content2">Like any default vim operator, they can be preceded by a count and followed by any motion or operator-pending mode command. Also, if you happen to use a plugin that adds custom text objects, like <a href="https://github.com/wellle/targets.vim" target="_blank" rel="noopener noreferrer">Targets</a>, or custom motions like <a href="https://github.com/easymotion/vim-easymotion" target="_blank" rel="noopener noreferrer">EasyMotion</a>, Paste-Replace will be compatible with it.</p>
-							<p class="content2">Access the <a href="https://github.com/kauer3/paste-replace.vim" target="_blank" rel="noopener noreferrer">GitHub repo</a> for installation, source code, bug report and suggestions.</p>
+							<h2 class="project-title">Beesweeper</h2>
+							<p class="content2">Beesweeper is a minesweeper like game, and it was built with React JS.</p>
+							<!-- <img src="images/paste-replace-example.gif"></img> -->
+							<p class="content2">Access the <a href="https://github.com/kauer3/paste-replace.vim" target="_blank" rel="noopener noreferrer">GitHub repo</a> to see the source code.</p>
 						</article>
 					</div>
 				</div>
@@ -288,11 +252,13 @@
 				<!-- Project 4 -->
 				<div class="snap-section section4">
 					<div class="container" id="container4">
-						<article id="fourth-project" class="project">
-							<h2 class="project-title">Insert-Motions.vim</h2>
-							<p class="content4">This project is a plugin to the text editor <a href="https://www.vim.org/" target="_blank" rel="noopener noreferrer">Vim</a>.</p>
-							<p class="content4">Insert-Motions makes normal mode motions (<code>h</code>, <code>j</code>, <code>k</code>, <code>l</code>, <code>w</code>, <code>e</code>, <code>b</code>, <code>W</code>, <code>E</code> and <code>B</code>) available in insert mode while holding the alt key.</p>
-							<p class="content4">For installation, source code, bug report and suggestions, access the <a href="https://github.com/kauer3/insert-motions.vim" target="_blank" rel="noopener noreferrer">GitHub repo</a>. Made with vimscript.</p>
+						<article id="second-project" class="project">
+							<h2 class="project-title">Paste-Replace.vim</h2>
+							<p class="content4">This project is a plugin to the text editor <a href="https://www.vim.org/" target="_blank" rel="noopener noreferrer">Vim</a>, and was written in vimscript.</p>
+							<img src="images/paste-replace-example.gif"></img>
+							<p class="content4">Paste-Replace provides new operators to replace text objects with register contents in Vim, so you can replace text objects with another text you had copied in a single command. Aditionally, Paste-Replace also provides an operator to copy text to clipboard and some other mappings related to registers.</p>
+							<p class="content4">Like any default vim operator, they can be preceded by a count and followed by any motion or operator-pending mode command. Also, if you happen to use a plugin that adds custom text objects, like <a href="https://github.com/wellle/targets.vim" target="_blank" rel="noopener noreferrer">Targets</a>, or custom motions like <a href="https://github.com/easymotion/vim-easymotion" target="_blank" rel="noopener noreferrer">EasyMotion</a>, Paste-Replace will be compatible with it.</p>
+							<p class="content4">Access the <a href="https://github.com/kauer3/paste-replace.vim" target="_blank" rel="noopener noreferrer">GitHub repo</a> for installation, source code, bug report and suggestions.</p>
 						</article>
 					</div>
 				</div>
@@ -300,11 +266,23 @@
 				<!-- Project 5 -->
 				<div class="snap-section section5">
 					<div class="container" id="container5">
+						<article id="fourth-project" class="project">
+							<h2 class="project-title">Insert-Motions.vim</h2>
+							<p class="content5">This project is a plugin to the text editor <a href="https://www.vim.org/" target="_blank" rel="noopener noreferrer">Vim</a>.</p>
+							<p class="content5">Insert-Motions makes normal mode motions (<code>h</code>, <code>j</code>, <code>k</code>, <code>l</code>, <code>w</code>, <code>e</code>, <code>b</code>, <code>W</code>, <code>E</code> and <code>B</code>) available in insert mode while holding the alt key.</p>
+							<p class="content5">For installation, source code, bug report and suggestions, access the <a href="https://github.com/kauer3/insert-motions.vim" target="_blank" rel="noopener noreferrer">GitHub repo</a>. Made with vimscript.</p>
+						</article>
+					</div>
+				</div>
+
+				<!-- Project 6 -->
+				<div class="snap-section section6">
+					<div class="container" id="container6">
 						<article id="fifth-project" class="project">
 							<h2 class="project-title">Wiki</h2>
-							<p class="content5">This is an online encyclopedia. Just like in Wikipedia, you can write, add and save new articles and edit existing ones.</p>
-							<p class="content5">This is the second project of the Harvard's <a href="https://cs50.harvard.edu/web/2020/" target="_blank" rel="noopener noreferrer">CS50 Web Programming with Python and Javascript</a>.</p>
-							<p class="content5">Wiki was made using Python and the Django framework, SQL, HTML and CSS.</p>
+							<p class="content6">This is an online encyclopedia. Just like in Wikipedia, you can write, add and save new articles and edit existing ones.</p>
+							<p class="content6">This is the second project of the Harvard's <a href="https://cs50.harvard.edu/web/2020/" target="_blank" rel="noopener noreferrer">CS50 Web Programming with Python and Javascript</a>.</p>
+							<p class="content6">Wiki was made using Python and the Django framework, SQL, HTML and CSS.</p>
 						</article>
 					</div>
 				</div>
