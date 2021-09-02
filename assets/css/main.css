@@ -1076,24 +1076,7 @@ ul.icons li a:active {
 		top: -10px;
 	}
 
-	/* ul.icons li:last-child { */
-	/* 	margin-left: 0; */
-	/* } */
-
 }
-
-/* 	ul.actions { */
-/* 		width: 100%; */
-/* 	} */
-
-/* ul.icons { */
-/* 	list-style: none; */
-/* 	padding-left: 0; */
-/* 	float: left; */
-/* 	width: 100%; */
-/* 	margin-top: 3vh; */
-/* } */
-/* } */
 
 /* Table */
 
@@ -1120,6 +1103,12 @@ table tbody tr:nth-child(2n + 1) {
 table tr td {
 	text-align: center;
 	padding: 1em;
+	transition: ease-in-out 1s;
+}
+
+table tr td:hover {
+	transform: scale(1.2);
+	transition: ease-out .3s;
 }
 
 table tr th {
@@ -1128,6 +1117,7 @@ table tr th {
 	font-weight: 600;
 	padding: 1em;
 	text-align: center;
+	transform: translate(-8px); 
 }
 
 table td img {
