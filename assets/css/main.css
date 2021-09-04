@@ -1821,6 +1821,13 @@ body.is-preload #header .content .inner {
 	}
 
 }
+/* #skills td { */
+/* 	text-align: center; */
+/* } */
+
+/* #skills img { */
+/* 	width: 1.5rem; */
+/* } */
 
 #projects .container {
 	margin: 0;
@@ -1832,6 +1839,7 @@ body.is-preload #header .content .inner {
 	position: relative;
 	width: 80%;
 	max-width: 100%;
+	height: auto;
 	max-height: 95vh;
 	background-color: rgba(1, 2, 8, 0.7);
 	border-radius: 5px;
@@ -1890,9 +1898,9 @@ body.is-preload #header .content .inner {
 
 #bee-project img {
 	float: right;
-	width: 29rem;
+	width: 30rem;
 	margin-left: 2%;
-	/* margin-top: 10px; */
+	margin-top: 10px;
 }
 
 @media screen and (max-width: 1292px) {
@@ -1968,7 +1976,7 @@ body.is-preload #header .content .inner {
 @media screen and (max-width: 821px) {
 
 	#projects .container {
-		padding: 6% 4% 6% 4%;
+		padding: 6% 4% 4% 6%;
 	}
 
 	#projects img {
