@@ -32,7 +32,7 @@ footer, header, hgroup, menu, nav, section {
 
 html, body {
 	height: 600vh;
-	max-width: 100%;
+	width: 100vw;
 	cursor: url(/images/cursor.png), auto;
 	overflow-x: hidden;
 	margin: 0;
