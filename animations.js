@@ -234,7 +234,7 @@ containers.forEach(container => {
     gsap.from(container, {
         css: {
             height: 0,
-            opacity: 0,
+            // opacity: 0,
         },
         scrollTrigger: {
             start: "bottom bottom",
@@ -291,7 +291,7 @@ titles.forEach(title => {
 ScrollTrigger.create({
     snap: {
         snapTo: 1 / 6,
-        duration: 5,
-        ease: "elastic"
+        duration: 0.5,
+        ease: "ease-in-out"
     }
 });

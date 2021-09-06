@@ -46,7 +46,7 @@ html {
 body {
 	line-height: 1;
 	position: relative;
-	/* overflow-y: hidden; */
+	/* overflow-x: hidden; */
 }
 
 #particles-js {
@@ -56,42 +56,46 @@ body {
 	/* z-index: 0; */
 }
 
-::-webkit-scrollbar {
-	width: 6px;
-	cursor: url(/images/cursorp.png), auto;
-}
+@media screen and (min-width: 590px) {
 
-::-webkit-scrollbar-corner, ::-webkit-resizer {
-	color: transparent;
-}
+	::-webkit-scrollbar {
+		width: 6px;
+		cursor: url(/images/cursorp.png), auto;
+	}
 
-::-webkit-scrollbar-thumb {
-	border-radius: 100%;
-	background-color: transparent;
-	background-image: -webkit-linear-gradient(90deg,
-	transparent,
-	rgba(0, 255, 255, 0.7) 45%,
-	rgba(0, 255, 255, 0.7) 45%,
-	transparent)
-}
+	::-webkit-scrollbar-corner, ::-webkit-resizer {
+		color: transparent;
+	}
 
-::-webkit-scrollbar-thumb:hover {
-	border-radius: 0%;
-	background-image: -webkit-linear-gradient(90deg,
-	transparent,
-	rgba(0, 255, 255, 1) 50%,
-	rgba(0, 255, 255, 1) 50%,
-	transparent)
-}
+	::-webkit-scrollbar-thumb {
+		border-radius: 100%;
+		background-color: transparent;
+		background-image: -webkit-linear-gradient(90deg,
+		transparent,
+		rgba(0, 255, 255, 0.7) 45%,
+		rgba(0, 255, 255, 0.7) 45%,
+		transparent)
+	}
 
-::-webkit-scrollbar-track {
-	background:  url(/images/scrollbar.jpg);
-}
+	::-webkit-scrollbar-thumb:hover {
+		border-radius: 0%;
+		background-image: -webkit-linear-gradient(90deg,
+		transparent,
+		rgba(0, 255, 255, 1) 50%,
+		rgba(0, 255, 255, 1) 50%,
+		transparent)
+	}
 
-::-webkit-scrollbar-track-piece:hover {
-	background:  rgba(0, 255, 255, 0.1);
-	/* box-shadow: inset 0 1px 1px #00ffff; */ 
-	border-radius: 100%;
+	::-webkit-scrollbar-track {
+		background:  url(/images/scrollbar.jpg);
+	}
+
+	::-webkit-scrollbar-track-piece:hover {
+		background:  rgba(0, 255, 255, 0.1);
+		/* box-shadow: inset 0 1px 1px #00ffff; */ 
+		border-radius: 100%;
+	}
+
 }
 
 ol, ul {
@@ -1279,10 +1283,10 @@ button {
 	position: fixed;
 	top: 0;
 	left: 0;
-	width: 100%;
+	width: 100vw;
 	height: 100vh;
 	z-index: -1;
-	overflow: hidden;
+	overflow-x: hidden;
 }
 
 .bg:before, .bg:after {
@@ -1831,12 +1835,46 @@ body.is-preload #header .content .inner {
 
 }
 
+
+/* Controller */
+
+#controller {
+	list-style-type: none;
+	position: absolute;
+	bottom: 20px;
+	right: 2rem;
+}
+
+#controller a .fa-home {
+	font-size: 1.2rem;
+	margin-bottom: 30px;
+}
+
+#controller a .fa-sort-up, #controller a .fa-sort-down {
+	font-size: 2rem;
+}
+
+#controller a i {
+	cursor: url(/images/cursorp.png), auto;
+	transition: ease-out: 0.8s;
+}
+
+#controller a i:hover {
+	font-size: 2.1rem;
+	color: rgba(0, 255, 255, 0.75);
+	transition: ease-out 0.3s;
+}
+
+#controller #home i:hover {
+	font-size: 1.25rem;
+}
+
 #projects .container {
 	margin: 0;
 	top: 50%;
 	left: 50%;
 	-ms-transform: translate(-50%, -50%);
-	transform: translate(-50%, -50%) scale(1);
+	transform: translate(-50%, -50%);
 	padding: 4% 5% 5% 5%;
 	position: relative;
 	width: 80%;
@@ -1846,7 +1884,7 @@ body.is-preload #header .content .inner {
 	border-radius: 5px;
 	opacity: 1;
 	font-size: 1.1rem;
-	height: auto;
+	/* height: auto; */
 }
 
 /* #projects #container1 { */
@@ -1879,14 +1917,14 @@ body.is-preload #header .content .inner {
 
 #projects .snap-section {
 	position: relative;
-	width: 100%;
+	width: 100vw;
 	height: 100vh;
-	overflow: hidden;
+	overflow-x: hidden;
 }
 
 #projects .project {
 	position: relative;
-	width: 100%;
+	/* width: 100%; */
 	padding-left: 1rem;
 	padding-right: 1rem;
 	height: auto;
@@ -2030,6 +2068,10 @@ body.is-preload #header .content .inner {
 		margin-top: 3%;
 	}
 
+	#controller {
+		right: 1rem;
+	}
+
 }
 
 @media screen and (max-width: 589px) {
@@ -2039,6 +2081,10 @@ body.is-preload #header .content .inner {
 		letter-spacing: 0.2rem;
 	}
 
+	#controller {
+		display: none;
+	}
+
 }
 
 @media screen and (max-width: 480px) {
@@ -2046,47 +2092,6 @@ body.is-preload #header .content .inner {
 	#projects .container {
 		width: 99%;
 		padding: 4% 2% 4% 2% ;
-	}
-
-}
-
-/* Controller */
-
-#controller {
-	list-style-type: none;
-	position: absolute;
-	bottom: 20px;
-	right: 2rem;
-}
-
-#controller a .fa-home {
-	font-size: 1.2rem;
-	margin-bottom: 30px;
-}
-
-#controller a .fa-sort-up, #controller a .fa-sort-down {
-	font-size: 2rem;
-}
-
-#controller a i {
-	cursor: url(/images/cursorp.png), auto;
-	transition: ease-out: 0.8s;
-}
-
-#controller a i:hover {
-	font-size: 2.1rem;
-	color: rgba(0, 255, 255, 0.75);
-	transition: ease-out 0.3s;
-}
-
-#controller #home i:hover {
-	font-size: 1.25rem;
-}
-
-@media screen and (max-width: 600px) {
-
-	#controller {
-		display: none;
 	}
 
 }
