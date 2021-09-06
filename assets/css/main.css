@@ -34,11 +34,12 @@ html, body {
 	height: 600vh;
 	max-width: 100%;
 	cursor: url(/images/cursor.png), auto;
+	overflow-x: hidden;
 }
 
 body {
 	line-height: 1;
-	overflow-x: hidden;
+	position: relative;
 	/* overflow-y: hidden; */
 }
 
