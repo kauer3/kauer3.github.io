@@ -1282,6 +1282,7 @@ button {
 	width: 100%;
 	height: 100vh;
 	z-index: -1;
+	overflow: hidden;
 }
 
 .bg:before, .bg:after {
@@ -1292,6 +1293,7 @@ button {
 	left: 0;
 	width: 100%;
 	height: 100%;
+	overflow: hidden;
 }
 
 .bg:before {
@@ -1834,7 +1836,7 @@ body.is-preload #header .content .inner {
 	top: 50%;
 	left: 50%;
 	-ms-transform: translate(-50%, -50%);
-	transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%) scale(1);
 	padding: 4% 5% 5% 5%;
 	position: relative;
 	width: 80%;
@@ -1844,40 +1846,42 @@ body.is-preload #header .content .inner {
 	border-radius: 5px;
 	opacity: 1;
 	font-size: 1.1rem;
+	height: auto;
 }
 
-#projects #container1 {
-	min-height: 500px;
-}
+/* #projects #container1 { */
+/* 	min-height: 500px; */
+/* } */
 
-#projects #container2 {
-	min-height: 363px;
-}
+/* #projects #container2 { */
+/* 	min-height: 363px; */
+/* } */
 
-#projects #container4 {
-	min-height: 595px;
-}
+/* #projects #container4 { */
+/* 	min-height: 595px; */
+/* } */
 
-@media screen and (max-width: 480px) {
+/* @media screen and (max-width: 480px) { */
 
-	#projects #container1 {
-		min-height: 550px;
-	}
+/* 	#projects #container1 { */
+/* 		min-height: 550px; */
+/* 	} */
 
-	#projects #container2 {
-		min-height: 250px;
-	}
+/* 	#projects #container2 { */
+/* 		min-height: 250px; */
+/* 	} */
 
-	#projects #container4 {
-		min-height: 600px;
-	}
+/* 	#projects #container4 { */
+/* 		min-height: 600px; */
+/* 	} */
 
-}
+/* } */
 
 #projects .snap-section {
 	position: relative;
 	width: 100%;
 	height: 100vh;
+	overflow: hidden;
 }
 
 #projects .project {
@@ -1934,20 +1938,19 @@ body.is-preload #header .content .inner {
 
 	#projects .container {
 		width: 85%;
-		height: auto;
 	}
 
-	#projects #container1 {
-		height: auto;
-	}
+	/* #projects #container1 { */
+	/* 	height: auto; */
+	/* } */
 
-	#projects #container2 {
-		height: auto;
-	}
+	/* #projects #container2 { */
+	/* 	height: auto; */
+	/* } */
 
-	#projects #container4 {
-		height: auto;
-	}
+	/* #projects #container4 { */
+	/* 	height: auto; */
+	/* } */
 
 	#first-project img {
 		margin-left: 5%;

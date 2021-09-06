@@ -21,11 +21,11 @@ ScrollTrigger.create({
 
 const containers = gsap.utils.toArray('.container');
 const titles = gsap.utils.toArray('.project-title');
-const contents1 = gsap.utils.toArray('.content1');
-const contents2 = gsap.utils.toArray('.content2');
-const contents3 = gsap.utils.toArray('.content3');
-const contents4 = gsap.utils.toArray('.content4');
-const contents5 = gsap.utils.toArray('.content5');
+// const contents1 = gsap.utils.toArray('.content1');
+// const contents2 = gsap.utils.toArray('.content2');
+// const contents3 = gsap.utils.toArray('.content3');
+// const contents4 = gsap.utils.toArray('.content4');
+// const contents5 = gsap.utils.toArray('.content5');
 const sections = gsap.utils.toArray('.snap-section');
 
 document.querySelector("#portfolio").addEventListener("click", function () {
@@ -225,6 +225,11 @@ containers.forEach(container => {
         case 5:
             contents = gsap.utils.toArray('.content5');
             break;
+
+        case 6:
+            contents = gsap.utils.toArray('.content6');
+            break;
+
     }
     gsap.from(container, {
         css: {
