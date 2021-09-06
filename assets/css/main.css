@@ -1847,15 +1847,15 @@ body.is-preload #header .content .inner {
 }
 
 #projects #container1 {
-	height: 510px;
+	min-height: 500px;
 }
 
 #projects #container2 {
-	height: 363px;
+	min-height: 363px;
 }
 
 #projects #container4 {
-	height: 595px;
+	min-height: 595px;
 }
 
 @media screen and (max-width: 480px) {
